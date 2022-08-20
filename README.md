@@ -8,7 +8,11 @@ description: >-
 
 Notion formulas are bits of code that can make your Notion databases much more useful.
 
-Formulas in Notion are like a limited programming language. They can take in data from all other database properties, process it using [constants](formula-components/constants/), [operators](formula-components/operators/), and built-in [functions](formula-components/functions/), and then output new data.
+Formulas in Notion are like a limited programming language. They're written and used in [Formula properties](https://learn.thomasjfrank.com/notion-formula-reference/) within Notion databases ([learn about databases with my complete beginner's guide](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/)).
+
+
+
+Formulas can take in data from all other database properties, process it using [constants](formula-components/constants/), [operators](formula-components/operators/), and built-in [functions](formula-components/functions/), and then output new data.
 
 Using formulas, you can do things in your Notion databases that are otherwise impossible.
 
