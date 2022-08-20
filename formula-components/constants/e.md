@@ -68,7 +68,7 @@ Using $$e$$, we can write a Notion formula that models continuous growth of a st
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/0b8f36085ccf44e0bfa7e99e362dad27?v=6e7479ed8f73422795826c1bc75fa065" %}
+{% embed url="https://thomasfrank.notion.site/e-26dd4e2520134c30b10704e0369db206" %}
 
 ### "Formula" Property Formula
 
