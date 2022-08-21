@@ -1,5 +1,5 @@
 ---
-description: Learn the basics about Notion's formula syntax.
+description: Learn the basics of Notion's formula syntax.
 ---
 
 # Notion Formula Syntax
@@ -11,7 +11,7 @@ They're written in "Notion Formula Syntax" – however, you'll find that syntax
 You'll likely also see some similarities to Javascript syntax, though Notion Formula Syntax is far simpler.
 
 {% hint style="info" %}
-**Good to know:** Notion formulas must be entered in to the formula editor as a one-line formula without line breaks or indentation.
+**Good to know:** Notion formulas must be entered into the formula editor as a one-line formula without line breaks or indentation.
 
 Refer to my guide on [writing complex formulas](the-formula-editor.md#writing-complex-formulas-in-vs-code) to see how you can remove these elements before pasting your formulas from a text editor into Notion's editor.
 {% endhint %}
