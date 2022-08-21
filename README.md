@@ -8,9 +8,9 @@ description: >-
 
 Notion formulas are bits of code that can make your Notion databases much more useful.
 
-Formulas in Notion are like a limited programming language. They're written and used in [Formula properties](https://learn.thomasjfrank.com/notion-formula-reference/) within Notion databases ([learn about databases with my complete beginner's guide](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/)).
+Formulas in Notion are like a limited programming language. They're written and used in [Formula properties](create-a-formula-property.md) within Notion databases ([learn about databases with my complete beginner's guide](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/)).
 
-![](<.gitbook/assets/First Notion Formula Example.png>)
+![This formula calculates simple interest () using data from the Investment, Interest Rate, and Years properties.](<.gitbook/assets/First Notion Formula Example.png>)
 
 Formulas can take in data from all other database properties, process it using [constants](formula-components/constants/), [operators](formula-components/operators/), and built-in [functions](formula-components/functions/), and then output new data.
 
@@ -34,7 +34,7 @@ Notion formulas will let you create a database view like this (**assume "today" 
 
 **View and duplicate this example:**
 
-{% embed url="https://thomasfrank.notion.site/2d4ed3716253411fabcc837ea731f457?v=eefcad689529410da49aea98bb810735" %}
+{% embed url="https://thomasfrank.notion.site/Group-by-Formula-Values-c3f69307ef104fd282683ae0eb174f2a" %}
 
 Not only is your **Next Check-In** date automatically calculated based on your **Last Check-In,** but the view is also grouped (using Notion's [grouping feature](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/#grouping)) so that you can easily see any check-ins that need to happen within the next seven days.
 
