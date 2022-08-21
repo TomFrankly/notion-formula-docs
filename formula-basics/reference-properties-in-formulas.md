@@ -24,6 +24,12 @@ Refer to the following table to see the data type of each property:
 
 <table><thead><tr><th>Property</th><th data-type="select" data-multiple>Data Type</th><th>Notes</th></tr></thead><tbody><tr><td>Title</td><td></td><td>This is the default "Name" property that all database are required to have.</td></tr><tr><td>Text</td><td></td><td></td></tr><tr><td>Number</td><td></td><td></td></tr><tr><td>Select</td><td></td><td></td></tr><tr><td>Multi-Select</td><td></td><td>Returns a comma-separated string of all values present in the Multi-Select property.</td></tr><tr><td>Status</td><td></td><td>Returns a string even if the Status property is displayed as a Checkbox.</td></tr><tr><td>Date</td><td></td><td>Use the <a href="../formula-components/functions/start.md">start</a> and <a href="../formula-components/functions/end.md">end</a> functions to access dates in a date range.</td></tr><tr><td>Person</td><td></td><td></td></tr><tr><td>Files &#x26; Media</td><td></td><td>Returns the URL of the asset</td></tr><tr><td>Checkbox</td><td></td><td></td></tr><tr><td>URL</td><td></td><td></td></tr><tr><td>Email</td><td></td><td></td></tr><tr><td>Phone</td><td></td><td></td></tr><tr><td>Formula</td><td></td><td>Can return any of the data types. Must output only one. Use <a href="../reference/converting-data-types.md">type conversion</a> to work with multiple data types.</td></tr><tr><td>Relation</td><td></td><td></td></tr><tr><td>Rollup</td><td></td><td>See Notes on Rollups below.</td></tr><tr><td>Create time</td><td></td><td></td></tr><tr><td>Created by</td><td></td><td></td></tr><tr><td>Last edited time</td><td></td><td></td></tr><tr><td>Last edited by</td><td></td><td></td></tr></tbody></table>
 
+## Example Database
+
+This database contains an example of every property type in Notion referenced within a formula:
+
+{% embed url="https://thomasfrank.notion.site/Database-Property-Types-in-Formulas-e7eff58d928f4b37911dda9b192485b1" %}
+
 ## Notes on Rollups
 
 {% hint style="info" %}

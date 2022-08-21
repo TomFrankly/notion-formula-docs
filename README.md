@@ -108,6 +108,10 @@ Understanding data types is crucial for comfortably working with Notion formulas
 
 Additionally, every operator and function accepts specific data types in its argument(s). They also output data of a specific type - and that type is often different than the data types taken as inputs.
 
+You can see an example of every property type within Notion referenced in a formula in this database:
+
+{% embed url="https://thomasfrank.notion.site/Database-Property-Types-in-Formulas-e7eff58d928f4b37911dda9b192485b1" %}
+
 #### **Data Type Example**
 
 Here's an example using the [dateAdd](formula-components/functions/dateadd.md) function:
