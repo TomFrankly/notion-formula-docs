@@ -1,3 +1,7 @@
+---
+description: Learn about the Date data type in Notion formulas.
+---
+
 # Date (Data Type)
 
 Underneath the hood, Notion's date object consists of three parts:

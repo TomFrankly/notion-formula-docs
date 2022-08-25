@@ -1,3 +1,7 @@
+---
+description: Learn about the Number data type in Notion formulas.
+---
+
 # Number
 
 To cover:
