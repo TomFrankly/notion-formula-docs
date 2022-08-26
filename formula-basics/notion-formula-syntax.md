@@ -107,7 +107,7 @@ Notion's [formula editor](the-formula-editor.md) includes many [functions](../fo
 
 Functions accept one or more **arguments,** operate on the data of those arguments using internal logic, and output a result.&#x20;
 
-Arguments must be of the correct [data type](data-types/); otherwise, your formula will throw an [error](../reference/debugging-formulas.md).
+Arguments must be of the correct [data type](data-types/); otherwise, your formula will throw an [error](../reference/fixing-notion-formula-errors.md).
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript

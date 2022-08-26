@@ -21,7 +21,7 @@ This site is a **comprehensive** reference for creating, using, and debugging No
 
 _Every_ formula [constant](formula-components/constants/), [operator](formula-components/operators/), and [function](formula-components/functions/) has been fully documented with example code and one or more working example databases, complete with **templates** you can duplicate.
 
-You'll also find reference guides on things like [operator precedence](reference/operator-precedence-and-associativity.md), [data type conversion](reference/converting-data-types.md), [debugging](reference/debugging-formulas.md), and [regular expressions](reference/regular-expressions-in-notion-formulas.md).
+You'll also find reference guides on things like [operator precedence](reference/operator-precedence-and-associativity.md), [data type conversion](reference/converting-data-types.md), [debugging](reference/fixing-notion-formula-errors.md), and [regular expressions](reference/regular-expressions-in-notion-formulas.md).
 {% endhint %}
 
 ## A Formula Example

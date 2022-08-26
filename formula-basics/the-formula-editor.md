@@ -30,8 +30,8 @@ When there is an error in your formula, you'll see a description of it at the bo
 
 Learn how to debug your formulas and fix errors:
 
-{% content-ref url="../reference/debugging-formulas.md" %}
-[debugging-formulas.md](../reference/debugging-formulas.md)
+{% content-ref url="../reference/fixing-notion-formula-errors.md" %}
+[fixing-notion-formula-errors.md](../reference/fixing-notion-formula-errors.md)
 {% endcontent-ref %}
 
 ## Writing Complex Formulas in VS Code

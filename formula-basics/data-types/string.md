@@ -69,13 +69,14 @@ You can compare strings using the equal `==` and unequal `!=` operators and rela
 
 Some special characters must be **escaped** with the backslash character `\` in order to represented property in a Notion formula.
 
-| Character        | Escape Sequence |
-| ---------------- | --------------- |
-| Double Quote `"` | `\"`            |
-| Backslash `\`    | `\\`            |
-| Newline          | `\n`            |
-| Tab              | `\t`            |
-| Carriage Return  | `\r`            |
+| Character           | Escape Sequence |
+| ------------------- | --------------- |
+| Double Quote `"`    | `\"`            |
+| Backslash `\`       | `\\`            |
+| Newline             | `\n`            |
+| Tab                 | `\t`            |
+| Carriage Return     | `\r`            |
+| Backspace character | `\b`            |
 
 **Important notes:**
 

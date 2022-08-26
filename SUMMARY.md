@@ -87,7 +87,7 @@
 
 * [Operator Precedence and Associativity](reference/operator-precedence-and-associativity.md)
 * [Converting Data Types](reference/converting-data-types.md)
-* [Debugging Formulas](reference/debugging-formulas.md)
+* [Fixing Notion Formula Errors](reference/fixing-notion-formula-errors.md)
 * [Property Reference Limits](reference/property-reference-limits.md)
 * [Regular Expressions in Notion Formulas](reference/regular-expressions-in-notion-formulas.md)
 
