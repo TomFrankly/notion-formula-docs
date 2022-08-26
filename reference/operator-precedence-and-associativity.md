@@ -74,7 +74,7 @@ false and true != true and true // Output: False
 1 == 1 and not ((2 ^ 2) == 4) // Output: False
 
 // Proof: right-to-left associativity of "Not"
-not not true // Output: True (LTR would result in an error
+not not true // Output: True (LTR would result in an error)
 ```
 {% endcode %}
 
