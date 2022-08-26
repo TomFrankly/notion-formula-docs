@@ -3,6 +3,7 @@
 Error types:
 
 * Property not found
+* Too few arguments...
 * Type mismatch
 * Character expected
 * JSON Parse (such as when you use `\` once in a regex)
