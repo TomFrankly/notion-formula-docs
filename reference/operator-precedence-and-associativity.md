@@ -14,7 +14,19 @@ Refer to the table below to see the precedence level and associativity of each o
 
 Since parentheses `()` have the highest precedence in a Notion formula, you can use them to define a specific order of operations within any formula.
 
-It's also good to understand that&#x20;
+It's also good to understand that **associativity** can be thought of as an implied _default_ setting of parentheses. For example:
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+// Multiply has left-to-right associativity. The following are equivalent:
+2 * 3 * 4 // Output: 24
+(2 * 3) * 4 // Output: 24
+
+// Exponentiation has right-to-left associativity (the "Tower Rule"). The following are equivalent:
+2 ^ 3 ^ 2 // Output: 512
+2 ^ (3 ^ 2) // Output: 512
+```
+{% endcode %}
 
 Certain operators cannot be **chained** in Notion formulas; thus, they do not have associativity. These are marked with "N/A" in the associativity column.
 
@@ -38,7 +50,17 @@ For example, the following formulas will not work in Notion:
 ```
 {% endcode %}
 
+If you want to understand operator precedence and associativity more thoroughly, I'll recommend reading through the Operator Precedence guide for JavaScript on MDN's web docs:
 
+{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" %}
+
+<details>
+
+<summary>Operator Precedence/Associativity Proofs</summary>
+
+Much of my original research on Notion's operator precedence and associativity was based off of the precedence/associativity in JavaScript, for which I've linked the MDN doc above.
+
+However, I also worked to prove that these precedence/associativity rules held for Notion formulas. Here are a few proofs for some of the trickier relationships. Feel free to paste them into a Notion formula editor and see how they work for yourself!
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript
@@ -56,7 +78,7 @@ not not true // Output: True (LTR would result in an error
 ```
 {% endcode %}
 
-## Operator Associativity
+</details>
 
 #### About the Author
 
