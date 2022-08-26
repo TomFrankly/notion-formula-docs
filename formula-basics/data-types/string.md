@@ -30,7 +30,7 @@ concat("Monkey D. Luffy", " will be ", "King of the Pirates!")
 ```
 {% endcode %}
 
-You cannot perform mathematical operations on strings. Notion does not do automatic type conversion, so you'll need to convert strings to numbers manually.
+You cannot perform mathematical operations on strings. Notion does not do automatic type conversion, so you'll need to [convert](../../reference/converting-data-types.md) strings to numbers manually.
 
 If a string contains nothing but a number, you can convert it using the [toNumber](../../formula-components/functions/tonumber.md) function or the [unaryPlus](../../formula-components/operators/unaryplus.md) operator `+`:
 
