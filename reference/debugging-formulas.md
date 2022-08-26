@@ -5,6 +5,7 @@ Error types:
 * Property not found
 * Too few arguments...
 * Type mismatch
+* Value expected
 * Character expected
 * JSON Parse (such as when you use `\` once in a regex)
 
