@@ -1,6 +1,7 @@
 # Table of contents
 
-* [What is a Notion Formula?](README.md)
+* [Formula Reference Introduction](README.md)
+* [What is a Notion Formula?](<README (1).md>)
 * [Create a Formula Property](create-a-formula-property.md)
 * [Learn Notion's Basics](https://thomasjfrank.com/fundamentals/)
 
