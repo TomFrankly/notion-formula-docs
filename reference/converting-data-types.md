@@ -84,12 +84,17 @@ To numbers:
 | Function/Method                                           | Example            |
 | --------------------------------------------------------- | ------------------ |
 | [timestamp](../formula-components/functions/timestamp.md) | `timestamp(now())` |
+| [toNumber](../formula-components/functions/tonumber.md)   | toNumber(now())    |
 | [minute](../formula-components/functions/minute.md)       | `minute(now())`    |
 | [hour](../formula-components/functions/hour.md)           | `hour(now())`      |
 | [day](../formula-components/functions/day.md)             | `day(now())`       |
 | [date](../formula-components/functions/date.md)           | `date(now())`      |
 | [month](../formula-components/functions/month.md)         | `month(now())`     |
 | [year](../formula-components/functions/year.md)           | `year(now())`      |
+
+{% hint style="info" %}
+**Good to know:** The [toNumber](../formula-components/functions/tonumber.md) function converts dates to their Unix timestamp, just like the [timestamp](../formula-components/functions/timestamp.md) function.
+{% endhint %}
 
 To Booleans:
 
