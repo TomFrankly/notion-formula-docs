@@ -4,7 +4,14 @@ description: Learn how to convert data to another type in a Notion formula.
 
 # Converting Data Types
 
-Notion formulas can only return data of a single type. Additionally, you can only compare data that share the same type when you use comparison operators such as [equal](../formula-components/operators/equal.md), [and](../formula-components/operators/and.md), or [larger](../formula-components/operators/larger.md) (and some require a specific data type).
+Notion formulas can only return data of a single type. For reference, Notion formulas work with four distinct [data types](../formula-basics/data-types/):
+
+* [String](../formula-basics/data-types/string.md)
+* [Number](../formula-basics/data-types/number.md)
+* [Boolean (Checkbox)](../formula-basics/data-types/boolean-checkbox.md)
+* [Date](../formula-basics/data-types/date-data-type.md)
+
+Additionally, you can only compare data that share the same type when you use comparison operators such as [equal](../formula-components/operators/equal.md), [and](../formula-components/operators/and.md), or [larger](../formula-components/operators/larger.md) (and some require a specific data type).
 
 Therefore, you'll often need to convert data from one type to another in order to get your formula to work.
 
