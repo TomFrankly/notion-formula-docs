@@ -14,48 +14,88 @@ Here are all the methods you can use to convert data to another type.
 
 To numbers:
 
-* toNumber
-* unaryPlus
+| Function/Method                                                 | Example          |
+| --------------------------------------------------------------- | ---------------- |
+| [toNumber](../formula-components/functions/tonumber.md)         | `toNumber("42")` |
+| [unaryPlus](../formula-components/operators/unaryplus.md) (`+`) | `+"42"`          |
 
 To Booleans:
 
-* if
+| Function/Method                             | Example                                   |
+| ------------------------------------------- | ----------------------------------------- |
+| [if](../formula-components/operators/if.md) | `if(prop("Text") == "true", true, false)` |
 
-To dates:
-
-* To a timestamp value first, then fromTimestamp (research needed)
+{% hint style="info" %}
+**Good to know:** You can't truly _convert_ strings, numbers, or dates to Boolean values. What you can do is write a simple statement that outputs a Boolean true/false value using your starting piece of data as criteria.
+{% endhint %}
 
 ## Converting Numbers
 
 To strings:
 
-* format()
+| Function/Method                                     | Example      |
+| --------------------------------------------------- | ------------ |
+| [format](../formula-components/functions/format.md) | `format(42)` |
+
+To Booleans:
+
+| Function/Method                             | Example                              |
+| ------------------------------------------- | ------------------------------------ |
+| [if](../formula-components/operators/if.md) | `if(prop("Num") == 42, true, false)` |
+
+To dates:
+
+| Function/Method                                                   | Example                      |
+| ----------------------------------------------------------------- | ---------------------------- |
+| [fromTimestamp](../formula-components/functions/fromtimestamp.md) | `fromTimestamp(prop("Num"))` |
+
+_Note: fromTimestamp only works if its argument is a valid Unix timestamp._
+
+{% hint style="info" %}
+**Good to know:** [replace](../formula-components/functions/replace.md), [replaceAll](../formula-components/functions/replaceall.md), and [test](../formula-components/functions/test.md) are able to automatically convert [numbers](../formula-basics/data-types/number.md) and [Booleans](../formula-basics/data-types/boolean-checkbox.md) (but not [dates](../formula-basics/data-types/date-data-type.md)) to strings. Manual [type conversion](converting-data-types.md) is not needed.
+{% endhint %}
 
 ## Converting Booleans
 
 To strings:
 
-* format()
+| Function/Method                                     | Example        |
+| --------------------------------------------------- | -------------- |
+| [format](../formula-components/functions/format.md) | `format(true)` |
 
 To numbers:
 
-* unaryPlus
-* toNumber
+| Function/Method                                                 | Example          |
+| --------------------------------------------------------------- | ---------------- |
+| [toNumber](../formula-components/functions/tonumber.md)         | `toNumber(true)` |
+| [unaryPlus](../formula-components/operators/unaryplus.md) (`+`) | `+true`          |
 
 ## Converting Dates
 
 To strings:
 
-* format
-* formatDate
+| Function/Method                                             | Example                            |
+| ----------------------------------------------------------- | ---------------------------------- |
+| [format](../formula-components/functions/format.md)         | `format(now())`                    |
+| [formatDate](../formula-components/functions/formatdate.md) | `formatDate(now(), "MMM DD YYYY")` |
 
 To numbers:
 
-* timestamp
+| Function/Method                                           | Example            |
+| --------------------------------------------------------- | ------------------ |
+| [timestamp](../formula-components/functions/timestamp.md) | `timestamp(now())` |
+| [minute](../formula-components/functions/minute.md)       | `minute(now())`    |
+| [hour](../formula-components/functions/hour.md)           | `hour(now())`      |
+| [day](../formula-components/functions/day.md)             | `day(now())`       |
+| [date](../formula-components/functions/date.md)           | `date(now())`      |
+| [month](../formula-components/functions/month.md)         | `month(now())`     |
+| [year](../formula-components/functions/year.md)           | `year(now())`      |
 
 To Booleans:
 
-* if
+| Function/Method                             | Example                                  |
+| ------------------------------------------- | ---------------------------------------- |
+| [if](../formula-components/operators/if.md) | `if(prop("Date") == now(), true, false)` |
 
 #### About the Author
 

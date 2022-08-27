@@ -16,10 +16,10 @@ You'll also find reference guides on things like [operator precedence](reference
 
 I initially wrote most of this reference in Notion, but ultimately decided to host it on [GitBook](https://www.gitbook.com/) for multiple reasons:
 
-* GitBook provides a left-hand, scrollable page list, which is common for other language/software documentation.
+* GitBook provides a left-hand, scrollable page list, which is common in the world of language/API/software documentation and extremely useful.
 * It also provides a floating, right-hand table of contents for each page.
-* Vanilla Notion pages don't allow custom domains, nor easy-to-remember URLs.
-* In my testing, I found GitBook to be faster than Notion-powered documentation/website tools like Super.
+* Notion pages don't support custom domains, nor easy-to-remember URLs.
+* In my testing, I found GitBook to be faster than Notion-powered documentation/website tools like [Super](https://super.so/).
 
 For all of these reasons, the **documentation** is hosted here on Gitbook. However, I've also included a companion resource to this guide directly on Notion:
 
