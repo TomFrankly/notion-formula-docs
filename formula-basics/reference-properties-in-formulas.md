@@ -49,6 +49,7 @@ When **Show Original** is set:
 
 * A Rollup targeting a number-type property will output a numeric character (e.g. `4`), but it's still a string. (Use [toNumber](../formula-components/functions/tonumber.md) in your formulas to convert it)
 * A Rollup targeting a Boolean-type property will output a string value of `Yes` or `No` (use [if](../formula-components/operators/if.md) to perform Boolean comparisons on these)
+* A Rollup targeting a Date-type property will output a string value representing the date value(s) being rolled up. Even if only one date is shown, the value is still a string (not a [date](data-types/date-data-type.md)).
 
 When a Calculate setting other than **Show Original** is chosen, the Rollup will output a different data type:
 
