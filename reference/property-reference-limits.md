@@ -62,8 +62,6 @@ if(not empty(prop("Rollup")), prop("Rollup") + 1, 1)
 
 As you can likely tell, the **Rollup** property is configured to display the value of property **2** from the row set in the **Relation** property.&#x20;
 
-_Note how the count stops at 6, indicating that the Rollup property (a non-Formula property) is included in the reference chain count._
-
 Keep this limitation in mind when you're creating complex databases where one formula references another formula, which references another formula, which references another....
 
 It's easy to unwittingly hit the limit (Notion won't alert you to it), and then be confused as to why the formula you're building isn't outputting all the data that it should.
