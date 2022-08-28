@@ -11,7 +11,7 @@ They're different than [strings](string.md), as they can be manipulated with dat
 Underneath the hood, Notion's date object consists of three parts:
 
 * Start date
-* End date
+* End date (optional)
 * Time zone
 
 You can learn more about how dates are formatted under the hood at the Notion API's property value reference for dates:
@@ -36,6 +36,14 @@ Within a Notion formula, the following [functions](../../formula-components/func
 | [fromTimestamp](../../formula-components/functions/fromtimestamp.md) | `fromTimestamp(1656012840000)`   | June 23, 2022 1:34 PM     |
 | [dateAdd](../../formula-components/functions/dateadd.md)             | `dateAdd(now(),3,"months")`      | November 18, 2022 2:11 PM |
 | [dateSubtract](../../formula-components/functions/datesubtract.md)   | `dateSubtract(now(),3,"months")` | May 18, 2022 2:11 PM      |
+
+{% hint style="info" %}
+**Good to know:** Notion Formula properties cannot **return** date ranges (i.e. a date object containing both a start and end date). They are only able to output a singular date.
+
+Date properties can output date ranges, as can Rollup properties - though Rollups can only output a range consisting of _start dates_ of multiple rows. Rollups cannot access end dates directly from Date properties.
+
+_A consequence of the Rollup limitation: While this is outside the scope of Notion formulas, I'll mention that it is currently impossible for a Rollup to return a date range for multiple rows that consists of the earliest start date and latest end date._
+{% endhint %}
 
 ## Time Zones and Dates in Notion
 
