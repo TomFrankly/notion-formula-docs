@@ -105,15 +105,59 @@ In other words, all of the `and` clauses are executed _before_ the first `or` cl
 
 After this error-checking stage, the formula uses a [nested if-statement](../operators/if.md#nested-if-then-statements) to determine the correct calculation to perform.
 
-If the hypotenuse is missing, we use the formula:
+If the hypotenuse is missing, we use the following formula to solve for it, where Side 1 and Side 2 are $$a$$ and $$b$$  respectively:
 
 $$
-\sr
+\sqrt{a^2+b^2}
+$$
+
+If one of the sides is missing, we instead use this formula, where $$c$$ is the hypotenuse, and $$b$$ is the non-missing side:
+
+$$
+\sqrt{c^2-b^2}
 $$
 
 #### Other formula components used in this example:
 
+{% content-ref url="../operators/if.md" %}
+[if.md](../operators/if.md)
+{% endcontent-ref %}
 
+{% content-ref url="empty.md" %}
+[empty.md](empty.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/and.md" %}
+[and.md](../operators/and.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/or.md" %}
+[or.md](../operators/or.md)
+{% endcontent-ref %}
+
+{% content-ref url="format.md" %}
+[format.md](format.md)
+{% endcontent-ref %}
+
+{% content-ref url="round.md" %}
+[round.md](round.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/add.md" %}
+[add.md](../operators/add.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/multiply.md" %}
+[multiply.md](../operators/multiply.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/divide.md" %}
+[divide.md](../operators/divide.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/pow.md" %}
+[pow.md](../operators/pow.md)
+{% endcontent-ref %}
 
 #### About the Author
 
