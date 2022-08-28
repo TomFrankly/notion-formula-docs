@@ -97,7 +97,7 @@ E.g. You must use `and` for the [and](../../formula-components/operators/and.md)
 | [or](../../formula-components/operators/or.md)   | `or`   | `or()`           | `2 > 1 or 6 > 5`     |
 | [not](../../formula-components/operators/not.md) | `not`  | `not()`          | `not empty("Hello")` |
 
-## Comparison Operators
+### Comparison Operators
 
 Comparison operators allow you to compare operands that share a data type.
 
