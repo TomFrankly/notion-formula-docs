@@ -22,7 +22,7 @@ sqrt(73-3^2) // Output: 8
 
 This example database uses the Pythagorean Theorem to solve for the missing side of any right triangle. Two of the three side lengths must be provided; the Calculator property will solve for the missing one.
 
-<figure><img src="../../.gitbook/assets/Sqrt Function - Square Root - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Sqrt Function - Square Root - Notion Formulas (1).png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
