@@ -81,7 +81,7 @@ formatDate(now(), "MMM DD YYYY") == formatDate(prop("Date"), "MMM DD YYYY")
 
 ...it is much more difficult to perform "earlier than" or "later than" comparisons.
 
-Therefore, it is recommended to use functions such as [date](../../formula-components/functions/date.md), [month](../../formula-components/functions/month.md), [year](../../formula-components/functions/year.md), etc. to make these kinds of comparisons.
+Therefore, it is recommended to use functions such as [timestamp](../../formula-components/functions/timestamp.md), [date](../../formula-components/functions/date.md), [month](../../formula-components/functions/month.md), [year](../../formula-components/functions/year.md), etc. to make these kinds of comparisons.
 
 #### About the Author
 
