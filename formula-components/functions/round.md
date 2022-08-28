@@ -54,11 +54,11 @@ round(5145.018394*10000)/10000 // Output: 5145.0184
 
 The example database below contains a formula that rounds the input number to several different decimal places.
 
-
+<figure><img src="../../.gitbook/assets/Round Funtion - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
-
+{% embed url="https://thomasfrank.notion.site/round-22cb0304a2214e35b287c214279fd792" %}
 
 ### “Rounded” Property Formula
 
@@ -83,6 +83,22 @@ Each rounded number is then converted to a [string](../../formula-basics/data-ty
 Note how `\n` allows us to create a new line in the formula output.
 
 #### Other formula components used in this example:
+
+{% content-ref url="format.md" %}
+[format.md](format.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/multiply.md" %}
+[multiply.md](../operators/multiply.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/divide.md" %}
+[divide.md](../operators/divide.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/add.md" %}
+[add.md](../operators/add.md)
+{% endcontent-ref %}
 
 #### About the Author
 
