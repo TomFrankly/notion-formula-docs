@@ -13,6 +13,8 @@ The `sqrt()` function returns the square root of its argument. `sqrt()` accepts 
 sqrt(16) // Output: 4
 
 sqrt(100) // Output: 10
+
+sqrt(73-3^2) // Output: 8
 ```
 {% endcode %}
 
