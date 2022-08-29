@@ -76,7 +76,7 @@ Here's the expression (refer to the [regular expressions guide](../reference/reg
 {% endcode %}
 
 {% hint style="info" %}
-Good to know: You can use text-snippet apps like [TextExpander](https://textexpander.com/), [Alfred](https://www.alfredapp.com/help/features/snippets/) (macOS), or [Espanso](https://espanso.org/install/) to find this expression to an easy-to-type keyword. I use `nminify`.
+Good to know: You can use text-snippet apps like [TextExpander](https://textexpander.com/), [Alfred](https://www.alfredapp.com/help/features/snippets/) (macOS), or [Espanso](https://espanso.org/install/) to find this expression to an easy-to-type keyword. I use `nminify`as my keyword to auto-paste this snippet with Alfred.
 {% endhint %}
 
 ![](<../.gitbook/assets/Reformatting Notion Formula.png>)
