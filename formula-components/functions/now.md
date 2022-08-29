@@ -8,7 +8,7 @@ The `now()` function returns the current date and time in your local timezone.
 
 Notion sets your timezone automatically using your system/OS timezone.
 
-now() and [fromTimestamp](fromtimestamp.md) are the only functions that will allow you to add a true date object into a formula without pulling from a Date property. To "hard-code" other dates into a formula, use the methods described below.
+now() and [fromTimestamp](fromtimestamp.md) are the only functions that will allow you to add a true [date object](../../formula-basics/data-types/date-data-type.md) into a formula without pulling from a Date property. To "hard-code" other dates into a formula, use the methods described below.
 
 ## Example Formula
 
@@ -53,7 +53,7 @@ However, the `now()` function _always_ includes the time. There’s no argument 
 
 To do that, you need to use the formula shown at the top of this section: `dateSubtract(dateSubtract(now(), minute(now()), "minutes"), hour(now()), "hours")`.
 
-This uses the [dateSubtract](datesubtract.md) function to subtract `now()`'s current [minute](minute.md) and [hour](hour.md) values from `now()` itself, resulting in a date object that contains the current date with a time of `00:00`.
+This uses the [dateSubtract](datesubtract.md) function to subtract `now()`'s current [minute](minute.md) and [hour](hour.md) values from `now()` itself, resulting in a [date object](../../formula-basics/data-types/date-data-type.md) that contains the current date with a time of `00:00`.
 
 ### Use now() to “Hard-Code” a Specific Date in a Notion Formula
 
@@ -154,19 +154,151 @@ dateAdd(dateAdd(January 1,5,"months"),3,"days")
 
 ## Example Database
 
+The example database below shows how you can “hard-code” dates into a Notion formula using the `now()` function along with [dateAdd](dateadd.md) and [dateSubtract](datesubtract.md). The Date property outputs a date that matches the choices set in the Month and Day properties.
 
+<figure><img src="../../.gitbook/assets/Now Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/now-b5aa81037fee4aa8a5ed862614003476" %}
 
+### "Date" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+dateAdd(dateAdd(dateSubtract(dateSubtract(dateSubtract(dateSubtract(now(), minute(now()), "minutes"), hour(now()), "hours"), date(now()) - 1, "days"), month(now()), "months"), toNumber(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(prop("Month"),"January","0"),"February","1"),"March","2"),"April","3"),"May","4"),"June","5"),"July","6"),"August","7"),"September","8"),"October","9"),"November","10"),"December","11")), "months"), prop("Day")-1, "days")
 
+// Expanded
+dateAdd(
+    dateAdd(
+        dateSubtract(
+            dateSubtract(
+                dateSubtract(
+                    dateSubtract(
+                        now(), 
+                        minute(
+                            now()
+                        ), 
+                        "minutes"
+                    ), 
+                    hour(
+                        now()
+                    ), 
+                    "hours"
+                ), 
+                date(
+                    now()
+                ) - 1, 
+                "days"
+            ), 
+            month(
+                now()
+            ), 
+            "months"
+        ), 
+        toNumber(
+            replace(
+                replace(
+                    replace(
+                        replace(
+                            replace(
+                                replace(
+                                    replace(
+                                        replace(
+                                            replace(
+                                                replace(
+                                                    replace(
+                                                        replace(
+                                                            prop("Month"),
+                                                            "January",
+                                                            "0"
+                                                        ),
+                                                        "February",
+                                                        "1"
+                                                    ),
+                                                    "March",
+                                                    "2"
+                                                ),
+                                                "April",
+                                                "3"
+                                            ),
+                                            "May",
+                                            "4"
+                                        ),
+                                        "June",
+                                        "5"
+                                    ),
+                                    "July",
+                                    "6"
+                                ),
+                                "August",
+                                "7"
+                            ),
+                            "September",
+                            "8"
+                        ),
+                        "October",
+                        "9"
+                    ),
+                    "November",
+                    "10"
+                ),
+                "December",
+                "11"
+            )
+        ), 
+        "months"
+    ), 
+    prop("Day")-1, 
+    "days"
+)
+```
+{% endcode %}
 
+This example builds on the "hard-code" examples shown above.
+
+Instead of hard-coding a specific date, the formula allows user input via a Select property (Month) and a Number property (Day). This allows the user to select their own specific date, which is still not tied to any particular year. The chosen month/day date will always contain the current year.
+
+To set the month, the [replace](replace.md) function is used (many times) to replace the chosen month's text string with its corresponding [month](month.md) value (0-11). This replacement number is then turned into an actual number via the [toNumber](tonumber.md) function.
 
 #### Other formula components used in this example:
 
+{% content-ref url="replace.md" %}
+[replace.md](replace.md)
+{% endcontent-ref %}
 
+{% content-ref url="tonumber.md" %}
+[tonumber.md](tonumber.md)
+{% endcontent-ref %}
+
+{% content-ref url="dateadd.md" %}
+[dateadd.md](dateadd.md)
+{% endcontent-ref %}
+
+{% content-ref url="datesubtract.md" %}
+[datesubtract.md](datesubtract.md)
+{% endcontent-ref %}
+
+{% content-ref url="minute.md" %}
+[minute.md](minute.md)
+{% endcontent-ref %}
+
+{% content-ref url="hour.md" %}
+[hour.md](hour.md)
+{% endcontent-ref %}
+
+{% content-ref url="date.md" %}
+[date.md](date.md)
+{% endcontent-ref %}
+
+{% content-ref url="month.md" %}
+[month.md](month.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/subtract.md" %}
+[subtract.md](../operators/subtract.md)
+{% endcontent-ref %}
 
 #### About the Author
 
