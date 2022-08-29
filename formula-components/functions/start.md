@@ -50,19 +50,47 @@ dateAdd(end(prop("Date")), 30, "days") // Output: July 27, 2022
 
 ## Example Database
 
+The example database below counts the number of days in a date range.
 
+<figure><img src="../../.gitbook/assets/Start Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/start-2222d9fc26d4497495acfd72b9db6cb8" %}
 
+### "Days" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+dateBetween(end(prop("Date Range")), start(prop("Date Range")), "days")
 
+// Expanded
+dateBetween(
+    end(
+        prop("Date Range")
+    ), 
+    start(
+        prop("Date Range")
+    ), 
+    "days"
+)
+```
+{% endcode %}
 
+This example formula uses `start()` and [end](end.md) to pass beginning and ending arguments to the [dateBetween](datebetween.md) function.
+
+By specifying "days" as the third argument, we get the number of days in the date range.
 
 #### Other formula components used in this example:
 
+{% content-ref url="end.md" %}
+[end.md](end.md)
+{% endcontent-ref %}
 
+{% content-ref url="datebetween.md" %}
+[datebetween.md](datebetween.md)
+{% endcontent-ref %}
 
 #### About the Author
 
