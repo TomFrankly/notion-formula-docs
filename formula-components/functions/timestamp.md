@@ -34,17 +34,53 @@ timestamp(now()) // Output: 1656012120000 (will change with the value of now()
 
 ## Example Database
 
+The example database below uses the `timestamp()` function to determine which of two dates is the later one.
+
 
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/timestamp-e5d3c683ee8641e18478f5a7c6b3ddf9" %}
 
+### "Later Date" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+if(timestamp(prop("Date 1")) == timestamp(prop("Date 2")),"Date 1 and Date 2 are the same.",if(timestamp(prop("Date 1")) > timestamp(prop("Date 2")),"Date 1 is later than Date 2.","Date 2 is later than Date 1."))
 
+// Expanded
+if(
+    timestamp(
+        prop("Date 1")
+    ) == timestamp(
+        prop("Date 2")
+    ),
+    "Date 1 and Date 2 are the same.",
+    if(
+        timestamp(
+            prop("Date 1")
+        ) > timestamp(
+            prop("Date 2")
+        ),
+        "Date 1 is later than Date 2.",
+        "Date 2 is later than Date 1."
+    )
+)
+```
+{% endcode %}
 
+This formula uses a nested if-statement to first check if the timestamp values of the two&#x20;
 
 #### Other formula components used in this example:
+
+
+
+
+
+
+
+
 
 
 
