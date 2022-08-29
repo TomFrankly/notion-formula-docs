@@ -50,19 +50,77 @@ dateAdd(end(prop("Date")), 30, "days") // Output: July 27, 2022
 
 ## Example Database
 
+The example database below contains several events that are happening over multiple days. The **Date Range** property displays their start and end dates, while the **Current State** formula property determines whether the event has passed, is currently ongoing, or is still in the future.
 
+Finally, both the **Table** and **Board** views of the database are grouped by the **Current State** formula’s three possible outputs.
+
+<figure><img src="../../.gitbook/assets/End Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/end-c08d74b22d294a44802e7b0434bc45fd" %}
 
+### "Current State" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+if(dateBetween(start(prop("Date Range")),now(),"days") > 0,"Future Events",if(dateBetween(end(prop("Date Range")),now(),"days") >= 0,"Currently Active","Past Events"))
 
+// Expanded
+if(
+    dateBetween(
+        start(
+            prop("Date Range")
+        ),
+        now(),
+        "days"
+    ) > 0,
+    "Future Events",
+    if(
+        dateBetween(
+            end(
+                prop("Date Range")
+            ),
+            now(),
+            "days"
+        ) >= 0,
+        "Currently Active",
+        "Past Events"
+    )
+)
+```
+{% endcode %}
 
+This formula uses a [nested if-statement](../operators/if.md#nested-if-then-statements) and [dateBetween](datebetween.md) to first check if the current date (determined with the [now](now.md) function) is before the start of the event's date range.
+
+If it is not, the next level of the if-statement checks to see if the current date is before the end date of the date range (determined with `end()`).
 
 #### Other formula components used in this example:
 
+{% content-ref url="../operators/if.md" %}
+[if.md](../operators/if.md)
+{% endcontent-ref %}
 
+{% content-ref url="datebetween.md" %}
+[datebetween.md](datebetween.md)
+{% endcontent-ref %}
+
+{% content-ref url="start.md" %}
+[start.md](start.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/largereq.md" %}
+[largereq.md](../operators/largereq.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/larger.md" %}
+[larger.md](../operators/larger.md)
+{% endcontent-ref %}
+
+{% content-ref url="now.md" %}
+[now.md](now.md)
+{% endcontent-ref %}
 
 #### About the Author
 
