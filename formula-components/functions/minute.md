@@ -33,19 +33,71 @@ You can take this concept even further to “hard-code” any date into a Notion
 
 ## Example Database
 
+This example database shows both the current time (using the [now](now.md) function), as well as the current time rounded to the nearest hour.
 
+<figure><img src="../../.gitbook/assets/Minute Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/minute-ef5884e0a9c64500bb6684bdecb04c91" %}
 
+### "Nearest Hour" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+if(minute(now()) < 30, dateSubtract(now(), minute(now()), "minutes"), dateAdd(now(), 60 - minute(now()), "minutes"))
 
+// Expanded
+if(
+    minute(
+        now()
+    ) < 30,
+    dateSubtract(
+        now(),
+        minute(
+            now()
+        ),
+        "minutes"
+    ),
+    dateAdd(
+        now(),
+        60 - minute(
+            now()
+        ),
+        "minutes"
+    )
+)
+```
+{% endcode %}
 
+First, an [if statement](../operators/if.md) checks if the minute value of [now](now.md) is less than 30.
+
+If so, we subtract `now()`'s minute value from `now()` in order to get to the current hour.
+
+If not, we add `now()`'s minute value to `now()` in order to get to the _next_ hour.
 
 #### Other formula components used in this example:
 
+{% content-ref url="../operators/if.md" %}
+[if.md](../operators/if.md)
+{% endcontent-ref %}
 
+{% content-ref url="now.md" %}
+[now.md](now.md)
+{% endcontent-ref %}
+
+{% content-ref url="datesubtract.md" %}
+[datesubtract.md](datesubtract.md)
+{% endcontent-ref %}
+
+{% content-ref url="dateadd.md" %}
+[dateadd.md](dateadd.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/subtract.md" %}
+[subtract.md](../operators/subtract.md)
+{% endcontent-ref %}
 
 #### About the Author
 

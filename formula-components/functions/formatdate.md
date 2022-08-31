@@ -73,15 +73,19 @@ This example database shows the numbered week of year that matches the date in t
 
 ### “Week” Property Formula
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```jsx
 formatDate(prop("Date"), "wo")
 ```
+{% endcode %}
 
 ### “Detailed Format” Property Formula
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```jsx
 formatDate(prop("Date"), "dddd, MMMM Do, YYYY, HH:mm A, wo [week of the year]")
 ```
+{% endcode %}
 
 The Detailed Format property demonstrates many of the available formatting options. To see all formatting options, [visit the Moment.js reference](https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/).
 
