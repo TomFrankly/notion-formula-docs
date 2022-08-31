@@ -57,19 +57,47 @@ dateAdd(prop("Date"), -3, "months") // Output: March 1, 2022
 
 ## Example Database
 
+This example database demonstrates a very simple way to track recurring tasks in Notion. The **Next Due** formula returns the next due date for the task, based on the current Due date and the number of days specified in the Interval (Days) property.
 
+<figure><img src="../../.gitbook/assets/dateAdd Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/dateAdd-5600940547fd4d6387bafff5d706ed2b" %}
 
+### "Next Due" Property Formula
 
-### Property Formula
+```jsx
+// Compressed
+dateAdd(prop("Due"),prop("Interval"),prop("Unit") + "s")
 
+// Expanded
+dateAdd(
+    prop("Due"),
+    prop("Interval"),
+    prop("Unit") + "s"
+)
+```
 
+As you can see, this formula is quite simple. If you're not worried about accounting for overdue tasks, returning the "next due" date for a recurring task is quite easy.
+
+Using `dateAdd()`, all we are three pieces of information:
+
+* The original due date
+* The interval (a [number](../../formula-basics/data-types/number.md))
+* The unit (e.g. days, weeks, months, years)
+
+The value from the Unit property is [concatenated](concat.md) with "s" in order to make it conform to `dateAdd()`'s accepted values.
+
+Of course, handling recurring tasks can get _much_ more complicated if you do want to handle overdue tasks. If you want to see just how big a Notion formula can get, check out the recurring tasks formula we developed for my [Ultimate Tasks](https://thomasjfrank.com/templates/task-and-project-notion-template/) and [Ultimate Brain](https://thomasjfrank.com/brain/) templates:
+
+{% embed url="https://thomasfrank.notion.site/Next-Due-289446cae38648e48fe35e4f0b29f3de" %}
 
 #### Other formula components used in this example:
 
-
+{% content-ref url="../operators/add.md" %}
+[add.md](../operators/add.md)
+{% endcontent-ref %}
 
 #### About the Author
 
