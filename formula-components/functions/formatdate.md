@@ -63,19 +63,27 @@ For an example, see this recurring tasks tutorial that uses [Make.com](http://ma
 
 ## Example Database
 
+This example database shows the numbered week of year that matches the date in the Date property. `formatDate()` uses Moment.js for date formatting.
 
+<figure><img src="../../.gitbook/assets/formatDate - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/formatDate-b98249fbe11040e19fd07e3faa4cea26" %}
 
+### “Week” Property Formula
 
-### Property Formula
+```jsx
+formatDate(prop("Date"), "wo")
+```
 
+### “Detailed Format” Property Formula
 
+```jsx
+formatDate(prop("Date"), "dddd, MMMM Do, YYYY, HH:mm A, wo [week of the year]")
+```
 
-#### Other formula components used in this example:
-
-
+The Detailed Format property demonstrates many of the available formatting options. To see all formatting options, [visit the Moment.js reference](https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/).
 
 #### About the Author
 
