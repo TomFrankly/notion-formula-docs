@@ -36,7 +36,7 @@ timestamp(now()) // Output: 1656012120000 (will change with the value of now()
 
 The example database below uses the `timestamp()` function to determine which of two dates is the later one.
 
-
+<figure><img src="../../.gitbook/assets/Timestamp Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
@@ -70,19 +70,25 @@ if(
 ```
 {% endcode %}
 
-This formula uses a nested if-statement to first check if the timestamp values of the two&#x20;
+This formula uses a [nested if-statement](../operators/if.md#nested-if-then-statements) to first check if the timestamp values of the two dates are [equal](../operators/equal.md). If they are, the formula returns, "Date 1 and Date 2 are the same."
+
+If not, the next block checks to see if Date 1's timestamp is [larger](../operators/larger.md) than Date 2's timestamp.
+
+Depending on the result of this comparison, the formula will return, "Date 1 is later than Date 2," or "Date 2 is later than Date 1."
 
 #### Other formula components used in this example:
 
+{% content-ref url="../operators/if.md" %}
+[if.md](../operators/if.md)
+{% endcontent-ref %}
 
+{% content-ref url="../operators/equal.md" %}
+[equal.md](../operators/equal.md)
+{% endcontent-ref %}
 
-
-
-
-
-
-
-
+{% content-ref url="../operators/larger.md" %}
+[larger.md](../operators/larger.md)
+{% endcontent-ref %}
 
 #### About the Author
 
