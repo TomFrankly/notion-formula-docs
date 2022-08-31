@@ -24,6 +24,10 @@ Accepted units include:
 
 `dateBetween()` returns a positive number when the first date is _later_ than the second date.
 
+{% hint style="info" %}
+**Good to know:** You can use the [abs](abs.md) function to ensure the output is always positive.
+{% endhint %}
+
 ## Example Formula
 
 {% code overflow="wrap" lineNumbers="true" %}
@@ -41,19 +45,100 @@ dateBetween(now(),prop("Date"),"months") // Output: -6
 
 ## Example Database
 
+This example database uses the Birth Date property to determine the age of each person. Additional logic is included to deal with plurality (”year” vs “years”), and to express infant age in months.
 
+<figure><img src="../../.gitbook/assets/dateBetween Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/dateBetween-9078429567644f1b81c183fd6f7aa116" %}
 
+### "Age" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+dateBetween(now(), prop("Birth Date"), "years")
+```
+{% endcode %}
 
+### "Age (Pretty)" Property Formula
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+prop("Name") + " is " + if(dateBetween(now(), prop("Birth Date"), "years") < 1, format(dateBetween(now(), prop("Birth Date"), "months")) + if(dateBetween(now(), prop("Birth Date"), "months") == 1, " month old.", " months old."), format(dateBetween(now(), prop("Birth Date"), "years")) + if(dateBetween(now(), prop("Birth Date"), "years") == 1, " year old.", " years old."))
+
+// Expanded
+prop("Name") + " is " + 
+if(
+    dateBetween(
+        now(),
+        prop("Birth Date"),
+        "years"
+    ) < 1,
+    format(
+        dateBetween(
+            now(),
+            prop("Birth Date"),
+            "months"
+        )
+    ) + if(
+        dateBetween(
+            now(),
+            prop("Birth Date"),
+            "months"
+        ) == 1,
+        " month old.",
+        " months old."
+    ),
+    format(
+        dateBetween(
+            now(),
+            prop("Birth Date"),
+            "years"
+        )
+    ) + if(
+        dateBetween(
+            now(),
+            prop("Birth Date"),
+            "years"
+        ) == 1,
+        " year old.",
+        " years old."
+    )
+)
+```
+{% endcode %}
+
+Here, we create a "pretty" sentence that states the person's name along with their age.
+
+A nested if-statement is used to determine whether the age meets certain criteria. Depending on the result, the formula will return different ending strings:
+
+* If the person is less than 1 year old, the ending output will be "months old" or "month old" depending on the number of months.
+* If the person is exactly 1 year old, the ending output will be "year old."
+* Otherwise, the ending output will be "years old".
 
 #### Other formula components used in this example:
 
+{% content-ref url="../operators/if.md" %}
+[if.md](../operators/if.md)
+{% endcontent-ref %}
 
+{% content-ref url="../operators/add.md" %}
+[add.md](../operators/add.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/smaller.md" %}
+[smaller.md](../operators/smaller.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/equal.md" %}
+[equal.md](../operators/equal.md)
+{% endcontent-ref %}
+
+{% content-ref url="format.md" %}
+[format.md](format.md)
+{% endcontent-ref %}
 
 #### About the Author
 
