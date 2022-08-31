@@ -67,6 +67,7 @@ This example database demonstrates a very simple way to track recurring tasks in
 
 ### "Next Due" Property Formula
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```jsx
 // Compressed
 dateAdd(prop("Due"),prop("Interval"),prop("Unit") + "s")
@@ -78,6 +79,7 @@ dateAdd(
     prop("Unit") + "s"
 )
 ```
+{% endcode %}
 
 As you can see, this formula is quite simple. If you're not worried about accounting for overdue tasks, returning the "next due" date for a recurring task is quite easy.
 

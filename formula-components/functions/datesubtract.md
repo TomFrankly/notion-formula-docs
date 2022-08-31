@@ -57,19 +57,99 @@ dateSubtract(prop("Date"), -3, "months") // Output: September 1, 2022
 
 ## Example Database
 
+This example database demonstrates how to output a date object set to January 1, 12:00 AM in the current year, in your current time zone.
 
+<figure><img src="../../.gitbook/assets/dateSubtract - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/dateSubtract-281fc3d6cee940ab93a32abc5e01f227" %}
 
+### "Jan 1" Property Formula
 
-### Property Formula
+<pre class="language-jsx" data-overflow="wrap" data-line-numbers><code class="lang-jsx"><strong>// Compressed
+</strong>dateSubtract(dateSubtract(dateSubtract(dateSubtract(now(), minute(now()), "minutes"), hour(now()), "hours"), date(now()) - 1, "days"), month(now()), "months")
 
+// Expanded
+dateSubtract(
+    dateSubtract(
+        dateSubtract(
+            dateSubtract(
+                now(), 
+                minute(
+                    now()
+                ), 
+                "minutes"
+            ), 
+            hour(
+                now()
+            ), 
+            "hours"
+        ), 
+        date(
+            now()
+        ) - 1, 
+        "days"
+    ), 
+    month(
+        now()
+    ), 
+    "months"
+)</code></pre>
 
+This formula uses multiple instances of `dateSubtract()` to remove different units of time from the output of the [now](now.md) function in order to arrive at Jan 1, 12:00 AM.
+
+The amount of time that is subtracted from `now()` is actually derived from `now()` itself. For example:
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+dateSubtract(
+    now(), 
+    minute(
+        now()
+    ), 
+    "minutes"
+)
+```
+{% endcode %}
+
+Here, `minute(now())` gets the [minute](minute.md) value from `now()`.
+
+So, if it's currently 3:12 PM, this essentially says:
+
+> Subtract 12 minutes from 3:12 PM.
+
+The resulting output would be 3:00 PM.
+
+The formula then takes this output and does the same thing using [hour](hour.md), [date](date.md), and [month](month.md).
+
+The only caveat is that `1` must be substracted from the output of `date()`, since there is no "January 0".
 
 #### Other formula components used in this example:
 
+{% content-ref url="now.md" %}
+[now.md](now.md)
+{% endcontent-ref %}
 
+{% content-ref url="minute.md" %}
+[minute.md](minute.md)
+{% endcontent-ref %}
+
+{% content-ref url="hour.md" %}
+[hour.md](hour.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../create-a-formula-property.md" %}
+[create-a-formula-property.md](../../create-a-formula-property.md)
+{% endcontent-ref %}
+
+{% content-ref url="month.md" %}
+[month.md](month.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/subtract.md" %}
+[subtract.md](../operators/subtract.md)
+{% endcontent-ref %}
 
 #### About the Author
 
