@@ -33,19 +33,59 @@ You can take this concept even further to “hard-code” any date into a Notion
 
 ## Example Database
 
+This example database groups events in a Renaissance Faire by their time of day - Morning, Afternoon, and Evening. These three options are returned by the Time of Day formula property.
 
+<figure><img src="../../.gitbook/assets/Hour Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/hour-3b9108f7a368431a84e686827e47ece5" %}
 
+### "Time of Day" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+if(hour(prop("Date")) >= 18, "🌔 Evening", if(hour(prop("Date")) >= 12, "🌤 Afternoon", "🌄 Morning"))
 
+// Expanded
+if(
+    hour(
+        prop("Date")
+    ) >= 18,
+    "🌔 Evening",
+    if(
+        hour(
+            prop("Date")
+        ) >= 12,
+        "🌤 Afternoon",
+        "🌄 Morning"
+    )
+)
+```
+{% endcode %}
 
+Here, we use a nested if statement to first check if the `hour()` value of the Date property is [greater than or equal to](../operators/largereq.md) 18 (which is 6:00 PM in 12-hour time).
+
+If yes, the formula returns "🌔 Evening".
+
+If not, we then check if the `hour()` value is greater than or equal to 12 (noon in 12-hour time).
+
+If yes, the formula returns "🌤 Afternoon". If no, it returns "🌄 Morning".
+
+From there, we can set the database view to Group by the output of this formula property:
+
+<figure><img src="../../.gitbook/assets/Group by Formula Output in Notion.png" alt=""><figcaption></figcaption></figure>
 
 #### Other formula components used in this example:
 
+{% content-ref url="../operators/if.md" %}
+[if.md](../operators/if.md)
+{% endcontent-ref %}
 
+{% content-ref url="../operators/largereq.md" %}
+[largereq.md](../operators/largereq.md)
+{% endcontent-ref %}
 
 #### About the Author
 
