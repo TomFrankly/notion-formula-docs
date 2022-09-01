@@ -33,19 +33,104 @@ You can take this concept even further to “hard-code” any date into a Notion
 
 ## Example Database
 
+The example database below determines each person’s next birthday based on their Birth Date, as well as the current date.
 
+<figure><img src="../../.gitbook/assets/Month Function - Notion Formulas.png" alt=""><figcaption><p>Screenshot taken Sept 1, 2022.</p></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/month-5dc0a4f7f0bf4a8588c47bda80cb0e0a" %}
 
+### "Next Birthday" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+dateAdd(prop("Birth Date"), year(now()) - year(prop("Birth Date")) + if(month(prop("Birth Date")) == month(now()) and date(prop("Birth Date")) >= date(now()) or month(prop("Birth Date")) > month(now()), 0, 1), "years")
 
+// Expanded
+dateAdd(
+    prop("Birth Date"),
+    year(
+        now()
+    ) - 
+    year(
+        prop("Birth Date")
+    ) + 
+    if(
+        month(
+            prop("Birth Date")
+        ) == month(
+            now()
+        ) and date(
+            prop("Birth Date")
+        ) >= date(
+            now()
+        ) or month(
+            prop("Birth Date")
+        ) > month(
+            now()
+        ),
+        0,
+        1
+    ),
+    "years"
+)
+```
+{% endcode %}
 
+Here's the logic behind this formula:
+
+* Start with the birth year.
+* Add a number of years to it using [dateAdd](dateadd.md), determined by the year output of now minus the birth year itself (E.g. 2022 - 1991 = 31).
+* Determine if the person's birthday has already happened this year. If not, add one more year (since we're determining their _next_ birthday).
+
+To check whether or not the person's birthday has already happened, we use an [if statement](../operators/if.md) and multiple comparisons using [comparison operators](../operators/#comparison-operators). If one of the following is true:
+
+* The current month and the birth month are equal AND the current day of the month (determined with [date](date.md)) is equal to or later than the birth date's day of the month
+* OR the birth month is later than the current month
+
+...then this indicates that the person's birthday has NOT yet happened this year. Therefore, we add 0 to the count.
+
+Otherwise, we add 1 to the count.
+
+{% hint style="info" %}
+**Good to know:** The [or](../operators/or.md) operator has a lower [operator precedence](../../reference/operator-precedence-and-associativity.md) than the [and](../operators/and.md) operator, meaning that any "and" comparisons will be executed before the first "or" comparison.
+{% endhint %}
 
 #### Other formula components used in this example:
 
+{% content-ref url="dateadd.md" %}
+[dateadd.md](dateadd.md)
+{% endcontent-ref %}
 
+{% content-ref url="date.md" %}
+[date.md](date.md)
+{% endcontent-ref %}
+
+{% content-ref url="now.md" %}
+[now.md](now.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/add.md" %}
+[add.md](../operators/add.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/subtract.md" %}
+[subtract.md](../operators/subtract.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/equal.md" %}
+[equal.md](../operators/equal.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/largereq.md" %}
+[largereq.md](../operators/largereq.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/larger.md" %}
+[larger.md](../operators/larger.md)
+{% endcontent-ref %}
 
 #### About the Author
 
