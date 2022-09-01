@@ -33,19 +33,164 @@ You can take this concept even further to “hard-code” any date into a Notion
 
 ## Example Database
 
+The [now](now.md) formula example shows how to “hard-code” a date into a Notion formula without a specific year. The example database below does the same thing, except it allows you to specify a year using a Number property.
 
+<figure><img src="../../.gitbook/assets/Year Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/year-1125c7ee0d7a42dfa5e5ebe0a0222e35" %}
 
+### "Date" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+dateAdd(dateAdd(dateAdd(dateSubtract(dateSubtract(dateSubtract(dateSubtract(dateSubtract(now(), minute(now()), "minutes"), hour(now()), "hours"), date(now()) - 1, "days"), month(now()), "months"), year(now()), "years"), toNumber(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(prop("Month"), "January", "0"), "February", "1"), "March", "2"), "April", "3"), "May", "4"), "June", "5"), "July", "6"), "August", "7"), "September", "8"), "October", "9"), "November", "10"), "December", "11")), "months"), prop("Day") - 1, "days"), prop("Year"), "years")
 
+// Expanded
+dateAdd(
+    dateAdd(
+        dateAdd(
+            dateSubtract(
+                dateSubtract(
+                    dateSubtract(
+                        dateSubtract(
+                            dateSubtract(
+                                now(), 
+                                minute(
+                                    now()
+                                ), 
+                                "minutes"
+                            ), 
+                            hour(
+                                now()
+                            ), 
+                            "hours"
+                        ), 
+                        date(
+                            now()
+                        ) - 1, 
+                        "days"
+                    ), 
+                    month(
+                        now()
+                    ), 
+                    "months"
+                ),
+                year(
+                    now()
+                ),
+                "years"
+            ), 
+            toNumber(
+                replace(
+                    replace(
+                        replace(
+                            replace(
+                                replace(
+                                    replace(
+                                        replace(
+                                            replace(
+                                                replace(
+                                                    replace(
+                                                        replace(
+                                                            replace(
+                                                                prop("Month"),
+                                                                "January",
+                                                                "0"
+                                                            ),
+                                                            "February",
+                                                            "1"
+                                                        ),
+                                                        "March",
+                                                        "2"
+                                                    ),
+                                                    "April",
+                                                    "3"
+                                                ),
+                                                "May",
+                                                "4"
+                                            ),
+                                            "June",
+                                            "5"
+                                        ),
+                                        "July",
+                                        "6"
+                                    ),
+                                    "August",
+                                    "7"
+                                ),
+                                "September",
+                                "8"
+                            ),
+                            "October",
+                            "9"
+                        ),
+                        "November",
+                        "10"
+                    ),
+                    "December",
+                    "11"
+                )
+            ), 
+            "months"
+        ), 
+        prop("Day")-1, 
+        "days"
+    ),
+    prop("Year"),
+    "years"
+)
+```
+{% endcode %}
 
+This formula works the same way as the formula in the [now](now.md#date-property-formula) article, except we're now adding one extra instance of [dateAdd](dateadd.md) and [dateSubtract](datesubtract.md). These final instances:
+
+* Use `year()` to take the current year and set it to 0.
+* Then add the specified year in the Year property.
 
 #### Other formula components used in this example:
 
+{% content-ref url="dateadd.md" %}
+[dateadd.md](dateadd.md)
+{% endcontent-ref %}
 
+{% content-ref url="datesubtract.md" %}
+[datesubtract.md](datesubtract.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/subtract.md" %}
+[subtract.md](../operators/subtract.md)
+{% endcontent-ref %}
+
+{% content-ref url="replace.md" %}
+[replace.md](replace.md)
+{% endcontent-ref %}
+
+{% content-ref url="tonumber.md" %}
+[tonumber.md](tonumber.md)
+{% endcontent-ref %}
+
+{% content-ref url="now.md" %}
+[now.md](now.md)
+{% endcontent-ref %}
+
+{% content-ref url="minute.md" %}
+[minute.md](minute.md)
+{% endcontent-ref %}
+
+{% content-ref url="hour.md" %}
+[hour.md](hour.md)
+{% endcontent-ref %}
+
+{% content-ref url="date.md" %}
+[date.md](date.md)
+{% endcontent-ref %}
+
+{% content-ref url="month.md" %}
+[month.md](month.md)
+{% endcontent-ref %}
 
 #### About the Author
 

@@ -21,19 +21,27 @@ id() // Output: c5d67d15854744869cc4a062fb7b1377
 
 ## Example Database
 
+This example database uses the `id()` function and string concatenation to return the URL of each page within the database.
 
+<figure><img src="../../.gitbook/assets/Id Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/id-0770ebee438e48a6a8f59b0de0617ce8" %}
 
+### "URL" Property Formula
 
-### Property Formula
+```jsx
+"https://www.notion.so/" + id()
+```
 
-
+This formula concatenates the [string](../../formula-basics/data-types/string.md) "https://www.notion.so/" with the output of the `id()` function using the [add](../operators/add.md) operator.
 
 #### Other formula components used in this example:
 
-
+{% content-ref url="../operators/add.md" %}
+[add.md](../operators/add.md)
+{% endcontent-ref %}
 
 #### About the Author
 
