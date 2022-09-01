@@ -6,8 +6,8 @@ description: Learn how to use the add (+) operator in Notion formulas.
 
 The **add** (`+`) operator allows you to:
 
-* Perform addition on numbers
-* Concatenate strings - i.e. combine them (also doable with [concat](../functions/concat.md))
+* Perform addition on [numbers](../../formula-basics/data-types/number.md)
+* Concatenate [strings](../../formula-basics/data-types/string.md) - i.e. combine them (also doable with [concat](../functions/concat.md))
 
 When used in mathematical equations, the `+` operator follows the standard mathematical order of operations (PEMDAS). For more detail, see [Operator Precedence](../../reference/operator-precedence-and-associativity.md).
 
@@ -29,7 +29,7 @@ add("Monkey D."," Luffy") // Output: Monkey D. Luffy
 
 ### Working with 3 or More Operands
 
-Since **add** is a binary operator, it can only work on two _operands -_ the objects which are being operated on ([if](if.md) is the only operator that works on three operands).
+Since **add** is a binary [operator](./), it can only work on two _operands -_ the objects which are being operated on ([if](if.md) - the _ternary operator -_ is the only operator that works on three operands).
 
 If you need to work with more than two operands, the shorthand `+` is by far the easiest way to do it.
 
@@ -53,7 +53,7 @@ The example database below tracks a week of treasure-collecting by three pirates
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/ef834ca8d2104994a6e0a8db600fd069?v=5b402cc4a4294ac6a5b8687369f056dd" %}
+{% embed url="https://thomasfrank.notion.site/add-37fb95f8d8564fae8d7f9ccdc2996e96" %}
 
 Note how I’ve set the **number format** of each column to **U.S. Dollar.** I’ve also set each column’s **Calculate** value to **Sum,** allowing me to see the total of all rows put together.
 

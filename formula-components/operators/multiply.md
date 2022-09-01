@@ -4,7 +4,7 @@ description: Learn how to use the multiplication (*) operator in Notion formulas
 
 # multiply
 
-The **multiply (`*`)** operator allows you to multiply two numbers together and get their product.
+The **multiply (`*`)** operator allows you to multiply two [numbers](../../formula-basics/data-types/number.md) together and get their product.
 
 The `*` operator follows the standard mathematical order of operations (PEMDAS). For more detail, see [Operator Precedence](../../reference/operator-precedence-and-associativity.md).
 
@@ -22,7 +22,7 @@ multiply(12,-4) // Output: -48
 
 ### Working with 3 or More Operands
 
-Since **multiply** is a binary operator, it can only work on two _operands -_ the objects which are being operated on ([if](if.md) is the only operator that works on three operands).
+Since **multiply** is a binary operator, it can only work on two _operands -_ the objects which are being operated on ([if](if.md) - the _ternary operator -_ is the only operator that works on three operands).
 
 If you need to work with more than two operands, the shorthand `*` is by far the easiest way to do it.
 
@@ -52,7 +52,7 @@ The **Interest Earnings** formula shows the total amount of interest that their 
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/9b4ebd64531c4955a5af3bb6e9215560?v=26cee2072c01443882862a755622c12e" %}
+{% embed url="https://thomasfrank.notion.site/multiply-90dfbe43a01a4c128473987a270f45a6" %}
 
 This example uses the simple interest formula $$Prt$$, where:
 

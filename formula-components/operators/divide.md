@@ -4,7 +4,7 @@ description: Learn how to use the division (/) operator in Notion formulas.
 
 # divide
 
-The **divide (`/`)** operator allows you to divide two numbers and get their quotient.
+The **divide (`/`)** operator allows you to divide two [numbers](../../formula-basics/data-types/number.md) and get their quotient.
 
 The `/` operator follows the standard mathematical order of operations (PEMDAS). For more detail, see [Operator Precedence](../../reference/operator-precedence-and-associativity.md).
 
@@ -22,7 +22,7 @@ divide(12,-4) // Output: -3
 
 ### Working with 3 or More Operands
 
-Since **divide** is a binary operator, it can only work on two _operands -_ the objects which are being operated on ([if](if.md) is the only operator that works on three operands).
+Since **divide** is a binary operator, it can only work on two _operands -_ the objects which are being operated on ([if](if.md) - the _ternary operator -_ is the only operator that works on three operands).
 
 If you need to work with more than two operands, the shorthand `/` is by far the easiest way to do it.
 
@@ -54,7 +54,7 @@ The example database below shows the per-person split for several heists carried
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/e23555cd83c345beb00576ec717a5ac7?v=5d30ae65cf614d509d1f50a0a9550fbd" %}
+{% embed url="https://thomasfrank.notion.site/divide-cfaa9c1bdf41404491eacb24445ea455" %}
 
 ### "Split" Property Formula
 

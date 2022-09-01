@@ -34,7 +34,7 @@ In this example database, the **Formula (num)** property calculates the area of 
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/pi-036f1a255979425eb2bedf184c3dd7cb" %}
+{% embed url="https://thomasfrank.notion.site/c8925e4115304b7391c937b2ccc7f77e?v=af44e83960a644d7bbf466ee6d59739d" %}
 
 ### "Formula (Num)" Property Formula
 

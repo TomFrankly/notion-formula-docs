@@ -60,7 +60,7 @@ Check out the two formula properties in this example database; one uses the norm
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/e4dfb1804cf7456f802a473af1db6fdc?v=27299e0aba994ed9bf16b65f44de41c2" %}
+{% embed url="https://thomasfrank.notion.site/if-0aef9c1530d94075b1f8200911ecd6aa" %}
 
 **Other formula components used in this example:**
 
@@ -142,7 +142,7 @@ In the example database below, you can see the nested if-statements at work:
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/3872d10416354078ab87b10baef88370?v=f38aa4a1196f4479ab975965f7d5b36a" %}
+{% embed url="https://thomasfrank.notion.site/Nested-If-Statements-37c3331fcde740d39de8780abec4090c" %}
 
 **Other formula components used in this example:**
 

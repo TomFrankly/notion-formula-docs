@@ -55,10 +55,6 @@ The diagram below shows the same Notion database viewed from two different time 
 
 {% embed url="https://whimsical.com/dates-in-notion-YPiVW833k4cWWnNJ8oj7hQ" %}
 
-View and duplicate an example database with all of these date objects:
-
-{% embed url="https://thomasfrank.notion.site/Dates-and-Time-Zones-003e6aa976754ce581ffea5bf984fe5c" %}
-
 Date properties with set times _always_ display those times in the time zone in which they were set.&#x20;
 
 If you don't specify a time zone manually, then the time zone won't show for you when you're in that time zone; however, users in other time zones will see the time zone displayed along with the date.
