@@ -102,7 +102,7 @@ round(prop("Formula") * 100) / 100
 ```
 {% endcode %}
 
-The **Pretty** formula simply intakes **Formula,** then applies the `round()` function. I use the [decimal-place rounding trick](../../formula-examples/round-numbers-to-specific-decimal-places.md) to round to two decimal places.
+The **Pretty** formula simply intakes **Formula,** then applies the `round()` function. I use the [decimal-place rounding trick](broken-reference) to round to two decimal places.
 
 **Other formula components used in this example:**
 

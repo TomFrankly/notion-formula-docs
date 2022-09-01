@@ -66,7 +66,7 @@ This example uses the simple interest formula $$Prt$$, where:
 
 To get a final balance (principal + simple interest), you’d use the formula $$A=P(1+rt)$$.
 
-See that example at the [Simple Interest Calculator](../../formula-examples/simple-interest-calculator.md) database, or learn more with this [Calculator Soup calculator](https://www.calculatorsoup.com/calculators/financial/simple-interest-plus-principal-calculator.php).
+See that example at the [Simple Interest Calculator](broken-reference) database, or learn more with this [Calculator Soup calculator](https://www.calculatorsoup.com/calculators/financial/simple-interest-plus-principal-calculator.php).
 
 </details>
 

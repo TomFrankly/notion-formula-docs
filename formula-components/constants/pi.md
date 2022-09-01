@@ -34,7 +34,7 @@ In this example database, the **Formula (num)** property calculates the area of 
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/c8925e4115304b7391c937b2ccc7f77e?v=af44e83960a644d7bbf466ee6d59739d" %}
+{% embed url="https://thomasfrank.notion.site/pi-036f1a255979425eb2bedf184c3dd7cb" %}
 
 ### "Formula (Num)" Property Formula
 
@@ -89,8 +89,8 @@ round(prop("Formula (num)")*100)/100
 
 Notion’s built-in `round()` function only rounds numbers to the nearest whole integer. But this trick will output a rounded number to two decimals places instead. Learn more about this trick:
 
-{% content-ref url="../../formula-examples/round-numbers-to-specific-decimal-places.md" %}
-[round-numbers-to-specific-decimal-places.md](../../formula-examples/round-numbers-to-specific-decimal-places.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 **Other formula components used in this example:**

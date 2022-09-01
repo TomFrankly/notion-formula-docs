@@ -8,7 +8,7 @@ We can accomplish this by using the [replaceAll](../formula-components/functions
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/666d064631044c33aa4f2e84e23eafed?v=ff06e1ce0184482c8d0ceed5f7351c4e" %}
+{% embed url="https://thomasfrank.notion.site/Count-multi-select-tags-8438a2a8c6e54e028e16ef595222a5c5" %}
 
 ## "Shares" Property Formula
 
@@ -76,7 +76,7 @@ Here’s a new view of that database, which contains a new property called **Spl
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/ff88c003aa6d42c68a8dc4cb315df3b0?v=42031aec594d45a489984dcd4ef92bff" %}
+{% embed url="https://thomasfrank.notion.site/Count-multi-select-tags-8438a2a8c6e54e028e16ef595222a5c5" %}
 
 Here’s the code:
 

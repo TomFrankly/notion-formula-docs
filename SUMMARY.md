@@ -94,6 +94,4 @@
 
 ## Formula Examples
 
-* [Round Numbers to Specific Decimal Places](formula-examples/round-numbers-to-specific-decimal-places.md)
-* [Simple Interest Calculator](formula-examples/simple-interest-calculator.md)
 * [Count Multi-Select Tags](formula-examples/count-multi-select-tags.md)
