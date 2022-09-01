@@ -53,19 +53,123 @@ test(format(day(now())),"[06]") ? "It's the weekend!" : "It's a weekday."
 
 ## Example Database
 
+This example database finds the number of weekend days between two dates. If the starting and/or ending date is a weekend day, it is included in the count.
 
+<figure><img src="../../.gitbook/assets/Day Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/day-23ddaef5e0964616b2c77186b16d8995" %}
 
+### "Weekend Days" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+floor((prop("Days Between") + day(prop("Date 1"))) / 7) * 2 + if(day(prop("Date 1")) == 0, 1, 0) - if(day(prop("Date 2")) == 6, 1, 0)
 
+// Expanded
+floor(
+    (
+        prop("Days Between") + day(
+            prop("Date 1")
+        )
+    ) / 7
+) * 2 + if(
+    day(
+        prop("Date 1")
+    ) == 0, 
+    1, 
+    0
+) - if(
+    day(
+        prop("Date 2")
+    ) == 6, 
+    1, 
+    0
+)
+```
+{% endcode %}
 
+Let's first cover the **logic** behind this formula:
+
+First, we get the number of weekend days between our two dates, ignoring half-weekends. A half-weekend in the count occurs if:
+
+* Date 1 (Start date) is Sunday
+* Date 2 (End date) is Saturday
+
+Then, to account for half-weekends, we run the following checks:
+
+* If Date 1 is Sunday, we add 1.
+* If Date 2 is Saturday, we subtract 1.
+
+Now let's talk about the **formula**.
+
+To get the first count, which only counts full weekends, we find the number of days between Date 1 and Date 2 (stored in the Days Between property), and add to it the `day()` integer returned from Date 1.
+
+We divide that number by 7, then remove the trailing decimals by passing it through the [floor](floor.md) function. We then multiply by 2, since there are two days per weekend:
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+floor(
+    (
+        prop("Days Between") + day(
+            prop("Date 1")
+        )
+    ) / 7
+) * 2
+```
+{% endcode %}
+
+{% hint style="info" %}
+Note the use of **parentheses** here, which ensures the operations are carried out in the order we've specified above. To fully understand order of operations in Notion formulas, check out the [operator precedence](../../reference/operator-precedence-and-associativity.md) page.
+{% endhint %}
+
+Next, we check if Date 1 is Sunday, and if so, add 1:
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+if(day(prop("Date 1")) == 0, 1, 0)
+```
+{% endcode %}
+
+Finally, we check if Date 1 is Saturday, and if so, subtract 1:
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+if(day(prop("Date 2")) == 6, 1, 0)
+```
+{% endcode %}
+
+_Credit is due to IBM; I found the solution to this problem in their documentation for their Cognos Business Intellience Platform:_
+
+{% embed url="https://www.ibm.com/support/pages/calculate-number-weekdays-between-two-dates" %}
 
 #### Other formula components used in this example:
 
+{% content-ref url="floor.md" %}
+[floor.md](floor.md)
+{% endcontent-ref %}
 
+{% content-ref url="../operators/add.md" %}
+[add.md](../operators/add.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/divide.md" %}
+[divide.md](../operators/divide.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/multiply.md" %}
+[multiply.md](../operators/multiply.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/equal.md" %}
+[equal.md](../operators/equal.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/subtract.md" %}
+[subtract.md](../operators/subtract.md)
+{% endcontent-ref %}
 
 #### About the Author
 
