@@ -37,19 +37,67 @@ You can take this concept even further to “hard-code” any date into a Notion
 
 ## Example Database
 
+This example database takes a date from the Date property and returns both the first and last day of the month that contains that date.
 
+<figure><img src="../../.gitbook/assets/Date Function - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
+{% embed url="https://thomasfrank.notion.site/date-51aca1ed0b8c4851ba9d7115fd2effe3" %}
 
+### "First Day of Month" Property Formula
 
-### Property Formula
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+dateSubtract(prop("Date"), date(prop("Date")) - 1, "days")
 
+// Expanded
+dateSubtract(
+    prop("Date"),
+    date(
+        prop("Date")
+    ) - 1,
+    "days"
+)
+```
+{% endcode %}
 
+### “Last Day of Month” Property
+
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+// Compressed
+dateSubtract(dateAdd(prop("Date"), 1, "months"), date(prop("Date")), "days")
+
+// Expanded
+dateSubtract(
+    dateAdd(
+        prop("Date"),
+        1,
+        "months"
+    ),
+    date(
+        prop("Date")
+    ),
+    "days"
+)
+```
+{% endcode %}
 
 #### Other formula components used in this example:
 
+{% content-ref url="datesubtract.md" %}
+[datesubtract.md](datesubtract.md)
+{% endcontent-ref %}
 
+{% content-ref url="dateadd.md" %}
+[dateadd.md](dateadd.md)
+{% endcontent-ref %}
+
+{% content-ref url="../operators/subtract.md" %}
+[subtract.md](../operators/subtract.md)
+{% endcontent-ref %}
 
 #### About the Author
 
