@@ -22,6 +22,10 @@ Once your formula property has been created, you'll be able to click into its co
 
 <figure><img src=".gitbook/assets/Create a Formula - New Formula Property with Editor Open.png" alt=""><figcaption></figcaption></figure>
 
+If you'd like to see this process in action, here's a timestamped embed of the Formulas section in my Notion databases video guide:
+
+{% embed url="https://youtu.be/mAJOpO73d8Y?t=2351" %}
+
 From here, you can read my guide on Notion's formula editor:
 
 {% content-ref url="formula-basics/the-formula-editor.md" %}
