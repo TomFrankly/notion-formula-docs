@@ -41,7 +41,7 @@ This example database uses the `format()` function to output a string stating th
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/5157716f7cb34201ab8b17724dcfce3d?v=0e53ba6018f342abbefc8647fa80ebfa" %}
+{% embed url="https://thomasfrank.notion.site/format-d297d2dc11bb41a4a3a8b27d52e73722" %}
 
 ### “Age” Property Formula
 

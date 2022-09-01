@@ -46,7 +46,7 @@ This example database contains some file attachments. The Meta formula property 
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/5a35468a68534d5c96c31c5e0b68ad79?v=eef8cb7cce044a01ab5153599262d296" %}
+{% embed url="https://thomasfrank.notion.site/test-3d50bd33ca0c48f2af86adb51b1f538b" %}
 
 ### “Meta” Property Formula
 

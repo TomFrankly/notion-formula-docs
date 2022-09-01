@@ -64,7 +64,7 @@ A “round-up” donation simply rounds the purchase sub-total to the next great
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/4e54906b28884408b6c4ac46d65f8125?v=c923339508164402bc74ff8b26d9c58f" %}
+{% embed url="https://thomasfrank.notion.site/ceil-639508a0283f4b43a4898ca2efaf02ff" %}
 
 ### “Donation” Property Formula
 

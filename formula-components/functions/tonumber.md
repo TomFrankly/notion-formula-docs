@@ -32,7 +32,7 @@ This example database is a simple habit tracker. Each property represents a diff
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/39fa9dde7aa74e3c9a9e149eb9897c67?v=1e29d591a486422aa0efffd33ca6124e" %}
+{% embed url="https://thomasfrank.notion.site/toNumber-c0475c7eae804e98b0ce3f1f13cbebd6" %}
 
 ### “Habits” Property Formula
 

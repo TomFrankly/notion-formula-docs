@@ -38,7 +38,7 @@ The example database below contains quarterly sales data for a fictional company
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/4644ec6547cf4b5ab8c8d0e53919a670?v=644c5ce2daa649d5a86e2ce80e20d30b" %}
+{% embed url="https://thomasfrank.notion.site/max-0788452dc2e64251840a84c46542eca6" %}
 
 ### “Max” Property Formula
 

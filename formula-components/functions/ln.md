@@ -80,7 +80,7 @@ This example database calculates the calculates the **number of years** needed f
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/c4244f553795406399f11c492ef62d4b?v=7fc508aa92ed432690efbf24f9a74a7b" %}
+{% embed url="https://thomasfrank.notion.site/ln-77837ded2b364521aa6e79debad1f46b" %}
 
 ### “Years Needed” Property Formula
 

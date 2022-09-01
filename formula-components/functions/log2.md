@@ -66,7 +66,7 @@ The example database below shows this trick in action. Unfortunately, actual bin
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/c6bb43240a17435facb8efe9d6be6d14?v=7e30bff0f5434f81b38cbdb2bc66282a" %}
+{% embed url="https://thomasfrank.notion.site/log2-d74779a5704045679ad32f1d3f2d1366" %}
 
 ### “Length” Property Formula
 

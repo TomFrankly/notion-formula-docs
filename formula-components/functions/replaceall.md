@@ -53,7 +53,7 @@ This example database uses a multi-select property to track which superpowers ea
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/c123a59bb86b4b509ca59c38193e1dcd?v=144dab5d633049eda878a0dc3f3792b8" %}
+{% embed url="https://thomasfrank.notion.site/replaceAll-7cd44e7721ae4d1d8e5f508ff92995ee" %}
 
 ### “Count” Property Formula
 

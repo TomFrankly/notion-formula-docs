@@ -52,7 +52,7 @@ The example database below contains several media attachments. The **File Extens
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/383d3f0afa754450a47ddd5cbd2b73f6?v=f29a8f5c389a4d6d834b109eed426bb9" %}
+{% embed url="https://thomasfrank.notion.site/replace-955e8dfdd25e4491b11292634ae6340a" %}
 
 ### “File Extension” Property Formula
 
@@ -94,7 +94,7 @@ At first, the temperature is a [string](../../formula-basics/data-types/string.m
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/90de1ad2cf3c4b9b846c55a51794870b?v=013371496f8d4798807c70e48b5e2f4c" %}
+{% embed url="https://thomasfrank.notion.site/replace-955e8dfdd25e4491b11292634ae6340a" %}
 
 ### "Celsius Conversion" Property Formula
 

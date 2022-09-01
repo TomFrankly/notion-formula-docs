@@ -57,7 +57,7 @@ Floor and ceiling values are also provided for reference.
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/13afd5d04b9d4e038639870d20d90710?v=c0332ae024d34e43be923839cacd9988" %}
+{% embed url="https://thomasfrank.notion.site/floor-691b2d6e07c1491f9b1f6e9f3a9edfb5" %}
 
 ### “Trunc” Property Formula
 

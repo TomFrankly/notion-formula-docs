@@ -35,7 +35,7 @@ The example database below calculates several properties of a cube given a speci
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/46df461cf63244bda79491f313894eda?v=1fe1d50304634fddb144fb804af70ecb" %}
+{% embed url="https://thomasfrank.notion.site/cbrt-2e40d661145947c4a677ac4e5faafd47" %}
 
 ### Formula Explanations
 

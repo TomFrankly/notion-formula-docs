@@ -66,7 +66,7 @@ The example database below shows this trick in action.
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/d411dcce4ec348d49d99b2d45ff33ac5?v=ecae2c4e36ae469c81541061a5f2d760" %}
+{% embed url="https://thomasfrank.notion.site/log10-a6d3e62f27f34319b69582b02085fe36" %}
 
 ### "Length" Property Formula
 

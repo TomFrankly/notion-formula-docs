@@ -34,7 +34,7 @@ If the second argument is a later date than the first argument’s date, `dateBe
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/1e87813c4c844b718d44051b53f657f5?v=e24586c4a7864f57b8d5c4d9364fb975" %}
+{% embed url="https://thomasfrank.notion.site/abs-4e4faf9c5b734ec28aa0243f2fa43899" %}
 
 ### “Seconds Between” Property Formula
 

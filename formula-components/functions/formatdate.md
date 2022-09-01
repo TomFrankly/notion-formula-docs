@@ -53,6 +53,18 @@ dateAdd(formatDate(now(),"MMMM DD YYYY"),4,"months")
 ```
 {% endcode %}
 
+It is also very difficult to perform date comparisons using the output of `formatDate()`. While equality comparisons work well:
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+formatDate(now(), "MMM DD YYYY") == formatDate(prop("Date"), "MMM DD YYYY")
+```
+{% endcode %}
+
+...it is much more difficult to perform "earlier than" or "later than" comparisons.
+
+Therefore, it is recommended to use functions such as [timestamp](timestamp.md), [date](date.md), [month](month.md), [year](year.md), etc. to make these kinds of comparisons.
+
 It is also not possible to create date-based [filters](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/#filters) in a database view using a formula property that outputs a date string via `formatDate()`.
 
 However, it is possible to work with the output of `formatDate()` using the [Notion API](https://developers.notion.com/).

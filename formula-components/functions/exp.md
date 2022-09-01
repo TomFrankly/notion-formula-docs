@@ -58,7 +58,7 @@ This example is also used in the article on [Euler’s Constant (e)](../constant
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/534c140cdad8417db221b50326d8cbe0?v=23a0c7db54df46579f9216b140d001f2" %}
+{% embed url="https://thomasfrank.notion.site/exp-fc9e90520d054e15a4c8d47c8531d3af" %}
 
 ### “End Num” Property Formula
 

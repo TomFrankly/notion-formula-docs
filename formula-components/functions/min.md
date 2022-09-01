@@ -38,7 +38,7 @@ The example database below contains quarterly sales data for a fictional company
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/c8aa718de45040a39403c9b0b95e2160?v=a12df4aa7ee64f6095ed5604e7debd17" %}
+{% embed url="https://thomasfrank.notion.site/min-815db718ffad4e36898763f5d32a4cbc" %}
 
 ### “Min” Property Formula
 

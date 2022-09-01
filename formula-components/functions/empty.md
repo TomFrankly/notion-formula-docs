@@ -44,7 +44,7 @@ The example database below shows how you can sort sub-tasks by their parent task
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/b7621f9855d84533b9c377f9c9f75895?v=f9b8074ef24f417a8d8bfe3478e18382" %}
+{% embed url="https://thomasfrank.notion.site/empty-0e303017111448ceb798d27e6e58c4f8" %}
 
 ### “Parent Due” Property Formula
 
