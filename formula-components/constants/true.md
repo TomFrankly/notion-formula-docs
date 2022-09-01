@@ -63,7 +63,7 @@ Here you can see how Notion displays `true` and `false` Boolean values. You can 
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/3ad21372d4b14ecaa38ccc446c4d9605?v=2c056c3dc0f34608aeaffe9a54098029" %}
+{% embed url="https://thomasfrank.notion.site/True-2bf18c102db740beb70180502eda9046" %}
 
 **Other formula components used in this example:**
 
