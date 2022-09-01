@@ -2,19 +2,21 @@
 
 * [Formula Reference Introduction](README.md)
 * [What is a Notion Formula?](<README (1).md>)
-* [Create a Formula Property](create-a-formula-property.md)
 * [Learn Notion's Basics](https://thomasjfrank.com/fundamentals/)
 
 ## Formula Basics
 
+* [Create a Formula Property](formula-basics/create-a-formula-property.md)
 * [The Formula Editor](formula-basics/the-formula-editor.md)
 * [Notion Formula Syntax](formula-basics/notion-formula-syntax.md)
-* [Reference Properties in Formulas](formula-basics/reference-properties-in-formulas.md)
 * [Data Types](formula-basics/data-types/README.md)
   * [String](formula-basics/data-types/string.md)
   * [Number](formula-basics/data-types/number.md)
   * [Boolean (Checkbox)](formula-basics/data-types/boolean-checkbox.md)
   * [Date (Data Type)](formula-basics/data-types/date-data-type.md)
+* [Reference Properties in Formulas](formula-basics/reference-properties-in-formulas.md)
+* [Formulas in Database Filters](formula-basics/formulas-in-database-filters.md)
+* [Grouping Database Views by Formulas](formula-basics/grouping-database-views-by-formulas.md)
 
 ## Formula Components
 

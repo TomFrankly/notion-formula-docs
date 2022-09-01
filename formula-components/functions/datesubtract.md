@@ -139,8 +139,8 @@ The only caveat is that `1` must be substracted from the output of `date()`, sin
 [hour.md](hour.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../create-a-formula-property.md" %}
-[create-a-formula-property.md](../../create-a-formula-property.md)
+{% content-ref url="../../formula-basics/create-a-formula-property.md" %}
+[create-a-formula-property.md](../../formula-basics/create-a-formula-property.md)
 {% endcontent-ref %}
 
 {% content-ref url="month.md" %}
