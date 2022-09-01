@@ -87,11 +87,7 @@ round(prop("Formula (num)")*100)/100
 ```
 {% endcode %}
 
-Notion’s built-in `round()` function only rounds numbers to the nearest whole integer. But this trick will output a rounded number to two decimals places instead. Learn more about this trick:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+Notion’s built-in `round()` function only rounds numbers to the nearest whole integer. But this trick will output a rounded number to two decimals places instead. Learn more about this trick: [#rounding-to-specific-decimal-places](../functions/round.md#rounding-to-specific-decimal-places "mention")
 
 **Other formula components used in this example:**
 
