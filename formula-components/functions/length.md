@@ -26,7 +26,7 @@ This example database used the `length()` function to return the number of chara
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/690ca7be6c704413b655f31b29153570?v=ca679009d9834a5f89271ac39dbf45d3" %}
+{% embed url="https://thomasfrank.notion.site/length-3380c316260443d891358f5c7e3baba6" %}
 
 ### “Characters” Property Formula
 

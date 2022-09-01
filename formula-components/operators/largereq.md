@@ -40,7 +40,7 @@ This example database records the powerlifting totals for a few lifters and comp
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/31bb5644ec4b4ef3b337838dd63bd1d5?v=b8d543c2b3cb496584643b1e9aedc0c8" %}
+{% embed url="https://thomasfrank.notion.site/largerEq-e0fdb205a61c4bb387c582fbc20c238e" %}
 
 ### Explanation
 

@@ -38,7 +38,7 @@ This example database uses the `slice()` function to create a simple progress ba
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/3d7438e8e30748de8b6c5e510a629df1?v=47fd1a9215a44ea793dd23c9011796ab" %}
+{% embed url="https://thomasfrank.notion.site/slice-f8046dc7b0c34536bbe9136ff28cd24c" %}
 
 ### “Progress” Property Formula
 

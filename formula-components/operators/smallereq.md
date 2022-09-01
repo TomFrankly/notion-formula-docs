@@ -44,7 +44,7 @@ _**Note:** This example uses the_ [_2022 Federal income tax brackets_](https://w
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/0859f26d4c1c4ede88481342f9f22836?v=e616c2b10361410ca1d26e4ab7e1bef7" %}
+{% embed url="https://thomasfrank.notion.site/smallerEq-50fa1b35dc2f4c2793ae8dc55823167d" %}
 
 ### “Total Tax” Property Formula
 

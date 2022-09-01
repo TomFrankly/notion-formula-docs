@@ -81,7 +81,7 @@ The table below uses unaryMinus with an [if](if.md) statement to create a manual
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/54a1ae1dffe345df820822bc3db13058?v=a85a875764e54e7ca8b1d41be6798570" %}
+{% embed url="https://thomasfrank.notion.site/unaryMinus-d220dcd0982d471f97847e8b70634077" %}
 
 ### "Abs" Property Formula
 

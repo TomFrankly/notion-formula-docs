@@ -54,7 +54,7 @@ To display phone numbers in a more consistent manner, there is a helper property
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/5f9f4090c0ae4d9690c389a3a2f7d644?v=e48584527f7247e79d054638e7f07ecf" %}
+{% embed url="https://thomasfrank.notion.site/concat-2417e2c661ca4c7e8998bcbbfcc525e5" %}
 
 ### “Info” Property Formula
 

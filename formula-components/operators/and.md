@@ -55,7 +55,7 @@ The **Approved?** formula uses the **and** operator to ensure that both of these
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/a163ff267e7c4a4e812016ba5338faf8?v=95184fe8800543afa7cc7ea5ce82f3e7" %}
+{% embed url="https://thomasfrank.notion.site/and-2ba8f061236e47178d3924cd2a7a459d" %}
 
 ### "Approved?" Property Formula
 

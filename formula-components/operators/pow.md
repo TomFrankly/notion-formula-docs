@@ -4,7 +4,7 @@ description: Learn how to use the exponentiation (^) operator in Notion formulas
 
 # pow
 
-The **power (`^`)** operator (also known as the _exponentiation_ operator) allows you to raise a number to a higher power.
+The **power (`^`)** operator (also known as the _exponentiation_ operator) allows you to raise a [number](../../formula-basics/data-types/number.md) to a higher power.
 
 In technical terms, it raises the first operand to the power of the second operand.
 
@@ -145,7 +145,7 @@ The table below shows exponentiation at work in a Notion database.
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/94103984ddd04a849c65584803099742?v=9d0d75bb9c0648e7bf8e888208595cb4" %}
+{% embed url="https://thomasfrank.notion.site/pow-fd0d589c9dce48bca46863a4034a5290" %}
 
 ### "Power" Property Formula:
 

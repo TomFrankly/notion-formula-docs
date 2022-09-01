@@ -42,7 +42,7 @@ This example database records the results of several Rock, Paper, Scissors match
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/a6d8a75ec9834524a293a7a408d200de?v=943ebf70035d427dab71b3833a30a391" %}
+{% embed url="https://thomasfrank.notion.site/or-538fa5be23b6478fa200375a040d44eb" %}
 
 ### “Winner” Property Formula
 

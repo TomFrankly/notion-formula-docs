@@ -40,7 +40,7 @@ The **Result** formula displays the status of each proposal.
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/4f9b6b542dce4d9daab43bd4651c9edc?v=639ad480867647d2aba74ad04a488abb" %}
+{% embed url="https://thomasfrank.notion.site/smaller-2a187281656048f2a55cf6e464eab556" %}
 
 ### “Result” Property Formula
 

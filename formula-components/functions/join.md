@@ -37,7 +37,7 @@ The `join()` function is used to create line breaks.
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/8f77a5e53e1f425f86ed19c9115da7b0?v=d891deae52454f2bb6fd63428a6dba58" %}
+{% embed url="https://thomasfrank.notion.site/join-7081958e7841470dbd4c7f10fbf160ba" %}
 
 ### “Roster” Property Formula
 

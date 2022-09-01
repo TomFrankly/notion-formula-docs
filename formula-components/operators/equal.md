@@ -44,7 +44,7 @@ The example database below shows several rows with random dates. The **Last Week
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/0f55cc81d8e74437807a5a24547d1010?v=f6d7e1e1f27140ca8731f4f7c5d8ba6d" %}
+{% embed url="https://thomasfrank.notion.site/equal-461f9393ef0e401aad5e778055cd1539" %}
 
 {% hint style="success" %}
 **Want a simpler example?** Check out the one on the [inequality](unequal.md) (`!=`) operator's page. These operators are opposites, but their usage (and [operator precedence](../../reference/operator-precedence-and-associativity.md)) is the same.

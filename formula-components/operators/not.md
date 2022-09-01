@@ -42,7 +42,7 @@ The **Interview** checkbox returns true only if both of those conditions are met
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/fe30cce05d9b477ba762e5f6cc4a677d?v=1ac34c9b85de4b62895bffc2d86d257c" %}
+{% embed url="https://thomasfrank.notion.site/not-5630dfed61e9499b87c890ffce3ce0d8" %}
 
 ### "Interview" Property Formula
 

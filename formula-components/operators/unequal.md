@@ -42,7 +42,7 @@ The example database below contains a **Cat Status** property that will inform y
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/7599f23f88a6493d8a0fdad694127cb0?v=48d7069a0c244af7859d0956fffb6f4f" %}
+{% embed url="https://thomasfrank.notion.site/unequal-e0cbfc53d4cb421ea21f86a0ce11c652" %}
 
 ### “Cat Status” Property Formula
 

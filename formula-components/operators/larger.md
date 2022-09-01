@@ -38,7 +38,7 @@ This example database records the power levels of two fighters at different stag
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/e9d39ab1d4404749bb510c11d7e22738?v=8d52f0f9f40041ce892fc2c74897df94" %}
+{% embed url="https://thomasfrank.notion.site/larger-1741d98bc3c14fd18f888bf4b122d610" %}
 
 ### "Stronger" Property Formula
 

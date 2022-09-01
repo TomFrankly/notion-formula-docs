@@ -180,7 +180,7 @@ This example database shows the differing outputs of **remainder** and true **mo
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/95185faae7084d489e2921e0794bce1d?v=3f63e851fbc44f7a93881eb825876cad" %}
+{% embed url="https://thomasfrank.notion.site/mod-b2929bf0ce754ce381492c6c1ec4c3b1" %}
 
 You can check these results here:
 

@@ -6,7 +6,7 @@ description: Learn how to use the unaryPlus (+) operator in Notion formulas.
 
 The **unaryPlus (`+`)** operator is used to convert [Booleans](../../formula-basics/data-types/boolean-checkbox.md) and numeric [strings](../../formula-basics/data-types/string.md) to [numbers](../../formula-basics/data-types/number.md).
 
-Unlike [toNumber](../functions/tonumber.md), it cannot convert [**dates**](../../formula-basics/data-types/date-data-type.md) to numbers. Otherwise, it is functionally equivalent, and it can be written with the `+` operator for quick use.
+Unlike [toNumber](../functions/tonumber.md), it cannot convert [dates](../../formula-basics/data-types/date-data-type.md) to numbers. Otherwise, it is functionally equivalent, and it can be written with the `+` operator for quick use.
 
 You can also use the function version, `unaryPlus()`.
 
@@ -28,7 +28,7 @@ unaryPlus("42") // Output: 42
 ```
 {% endcode %}
 
-unaryPlus can be combined with other operators, including [unaryMinus](unaryminus.md) and even [add](add.md), which uses the same `+` character.
+`unaryPlus()` can be combined with other operators, including [unaryMinus](unaryminus.md) and even [add](add.md), which uses the same `+` character.
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```jsx
@@ -48,7 +48,7 @@ The example database below tracks daily habits with a checkbox property for each
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/4c17bc1602784046b9061e158982fa3d?v=e5cd20b009a74ff29ef0e12c7d06771c" %}
+{% embed url="https://thomasfrank.notion.site/unaryPlus-c01b055e99eb46688e5d4b596f0dd4d6" %}
 
 ### "Score" Property Formula
 
@@ -74,7 +74,7 @@ The example database below uses unaryPlus and the [replaceAll](../functions/repl
 
 ### View and Duplicate Database
 
-{% embed url="https://thomasfrank.notion.site/2a0e8b7c59624d9aaf3d7e0cb16d23ea?v=5ef1b49bb6004b7ca826aa32b525a8ed" %}
+{% embed url="https://thomasfrank.notion.site/unaryPlus-c01b055e99eb46688e5d4b596f0dd4d6" %}
 
 ### “Number” Property Formula
 
