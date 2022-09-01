@@ -63,6 +63,8 @@ dateSubtract(
 ```
 {% endcode %}
 
+To get the first day of the month, we simple subtract the `date()` integer (minus one) of the Date property from the Date property itself. We have to subtract one from the `date()` output in order to get to the 1st of the month - there's no 0th day of the month!
+
 ### “Last Day of Month” Property
 
 {% code overflow="wrap" lineNumbers="true" %}
@@ -84,6 +86,12 @@ dateSubtract(
 )
 ```
 {% endcode %}
+
+The end of the month is a variable number. Some months have 31 days, some have 30, and one has 28... sometimes.
+
+To solve for this, we first use [dateAdd](dateadd.md) to add one month to Date property's date. Then, we do the exact same `date()` subtraction operation described in the "First Day of the Month" section.
+
+However, this time we _don't_ subtract one from `date()`'s output, as we want to go one day further backwards from the 1st of the month.
 
 #### Other formula components used in this example:
 
