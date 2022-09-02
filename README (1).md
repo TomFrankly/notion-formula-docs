@@ -8,7 +8,7 @@ description: >-
 
 Notion formulas are bits of code that can make your Notion databases much more useful.
 
-Formulas in Notion are like a limited programming language. They're written and used in [Formula properties](formula-basics/create-a-formula-property.md) within Notion databases ([learn about databases with my complete beginner's guide](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/)).
+Formulas in Notion are like a limited programming language. They're written and used in [Formula properties](create-a-formula-property.md) within Notion databases ([learn about databases with my complete beginner's guide](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/)).
 
 ![This formula calculates simple interest () using data from the Investment, Interest Rate, and Years properties.](<.gitbook/assets/First Notion Formula Example.png>)
 

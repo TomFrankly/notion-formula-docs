@@ -6,7 +6,7 @@
 
 ## Formula Basics
 
-* [Create a Formula Property](formula-basics/create-a-formula-property.md)
+* [Create a Formula Property](create-a-formula-property.md)
 * [The Formula Editor](formula-basics/the-formula-editor.md)
 * [Notion Formula Syntax](formula-basics/notion-formula-syntax.md)
 * [Data Types](formula-basics/data-types/README.md)
@@ -93,6 +93,7 @@
 * [Fixing Notion Formula Errors](reference/fixing-notion-formula-errors.md)
 * [Property Reference Limits](reference/property-reference-limits.md)
 * [Regular Expressions in Notion Formulas](reference/regular-expressions-in-notion-formulas.md)
+* [Return Null/Empty Values in Formulas](reference/return-null-empty-values-in-formulas.md)
 
 ## Formula Examples
 
