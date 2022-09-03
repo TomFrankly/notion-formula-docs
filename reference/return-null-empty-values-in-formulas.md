@@ -4,9 +4,9 @@ description: Learn how to return a null (or empty) value from a Notion formula.
 
 # Return Null/Empty Values in Formulas
 
-[Unlike JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null), Notion formulas do have a **null** data type. However, it is possible to make a formula return a null/empty value using a couple of easy workarounds.
+[Unlike JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null), Notion formulas do not have a **null** data type. However, it is possible to make a formula return a null/empty value using some easy workarounds.
 
-To return a null/empty string, use a pair of double quotes `""`:
+To return a null/empty [string](../formula-basics/data-types/string.md), use a pair of double quotes `""`:
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript
@@ -14,7 +14,7 @@ To return a null/empty string, use a pair of double quotes `""`:
 ```
 {% endcode %}
 
-To return a null/empty number, use the following formula (c_redit to_ [_aNotioneer on Twitter_](https://twitter.com/aNotioneer/status/1565799381756006407) _for this number workaround_):
+To return a null/empty [number](../formula-basics/data-types/number.md), use the following formula (c_redit to_ [_aNotioneer on Twitter_](https://twitter.com/aNotioneer/status/1565799381756006407) _for this number workaround_):
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript
@@ -22,7 +22,7 @@ toNumber("")
 ```
 {% endcode %}
 
-Likewise, you can return a null/empty date object using this formula:
+Likewise, you can return a null/empty [date object](../formula-basics/data-types/date-data-type.md) using this formula:
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript
@@ -30,15 +30,19 @@ fromTimestamp(toNumber(""))
 ```
 {% endcode %}
 
-There is no possible null/empty state for Booleans/Checkboxes. However, you can convert Booleans to strings with format in order to create a setup where true/false/_empty_ is possible:
+There is no possible null/empty state for [Booleans/Checkboxes](../formula-basics/data-types/boolean-checkbox.md). However, you can convert Booleans to strings with format in order to create a setup where true/false/_empty_ is possible:
 
-<pre class="language-javascript" data-overflow="wrap" data-line-numbers><code class="lang-javascript">// Assume "Checkbox" is a Boolean/Checkbox property.
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+// Assume "Checkbox" is a Boolean/Checkbox property.
 
 // Invalid; will throw a Type Mismatch error:
 if( 1 > 2, prop("Checkbox"), "")
 
 // Valid. Will output "true", "false", or an empty value.
-<strong>if( 1 > 2, format(prop("Checkbox")), "")</strong></code></pre>
+if( 1 > 2, format(prop("Checkbox")), "")
+```
+{% endcode %}
 
 ## Example Database
 
