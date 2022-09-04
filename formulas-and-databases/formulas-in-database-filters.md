@@ -26,7 +26,7 @@ If you'd like to learn more about how to use filters in Notion databases, check 
 
 All of the concepts explained in this article can be seen at work in this example database, which contains several unique views. Each view filters by one or more formulas.
 
-
+<figure><img src="../.gitbook/assets/Filters and Formulas - Example Database - Notion Formulas.png" alt=""><figcaption></figcaption></figure>
 
 ### View and Duplicate Database
 
