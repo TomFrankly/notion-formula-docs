@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn how to reference other properties in Notion formulas in order to access
-  their data.
+  Learn how to reference other database properties in Notion formulas in order
+  to access their data.
 ---
 
 # Reference Properties in Formulas
@@ -10,7 +10,7 @@ Within a Notion formula, you can use the `prop()`function to reference and "pull
 
 When using `prop()`, encapsulate the property name in quotes – e.g. `prop("Name")`.
 
-Notion formulas can work with four different [data types](data-types/) - [string](data-types/string.md) (text content), [number](data-types/number.md), [Boolean](data-types/boolean-checkbox.md) (checkbox), and [date](data-types/date-data-type.md).
+Notion formulas can work with four different [data types](../formula-basics/data-types/) - [string](../formula-basics/data-types/string.md) (text content), [number](../formula-basics/data-types/number.md), [Boolean](../formula-basics/data-types/boolean-checkbox.md) (checkbox), and [date](../formula-basics/data-types/date-data-type.md).
 
 All database property types in Notion output a specific data type.&#x20;
 
@@ -36,7 +36,7 @@ This database contains an example of every property type in Notion referenced wi
 Learn more about Rollups in my [complete guide to Notion databases](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/#rollups).
 {% endhint %}
 
-The [data type](data-types/) of a Rollup referenced in a formula depends on both:
+The [data type](../formula-basics/data-types/) of a Rollup referenced in a formula depends on both:
 
 * The data type of the property the Rollup is referencing
 * The Rollup's **Calculate** setting
@@ -49,7 +49,7 @@ When **Show Original** is set:
 
 * A Rollup targeting a number-type property will output a numeric character (e.g. `4`), but it's still a string. (Use [toNumber](../formula-components/functions/tonumber.md) in your formulas to convert it)
 * A Rollup targeting a Boolean-type property will output a string value of `Yes` or `No` (use [if](../formula-components/operators/if.md) to perform Boolean comparisons on these)
-* A Rollup targeting a Date-type property will output a string value representing the date value(s) being rolled up. Even if only one date is shown, the value is still a string (not a [date](data-types/date-data-type.md)).
+* A Rollup targeting a Date-type property will output a string value representing the date value(s) being rolled up. Even if only one date is shown, the value is still a string (not a [date](../formula-basics/data-types/date-data-type.md)).
 
 When a Calculate setting other than **Show Original** is chosen, the Rollup will output a different data type:
 

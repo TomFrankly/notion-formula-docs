@@ -92,7 +92,7 @@ Throughout this reference, I'll mention many different terms related to Notion f
 
 I use the term "components" to collectively refer to the following tools that you have at your disposal when constructing formulas:
 
-* [Properties](formula-basics/reference-properties-in-formulas.md) - these are the other properties that exist in your database.
+* [Properties](formulas-and-databases/reference-properties-in-formulas.md) - these are the other properties that exist in your database.
 * [Constants](formula-components/constants/) - mathematical constants $$e$$​ and $$π$$​, plus the Boolean values true and false.
 * [Operators](formula-components/operators/) - symbols that perform operations on 1-3 operands. Includes mathematical operators (such as [add](formula-components/operators/add.md)), Boolean operators (such as [not](formula-components/operators/not.md)), and the [ternary operator (if)](formula-components/operators/if.md).
 * [Functions](formula-components/functions/) - pre-defined formulas that you can use to accomplish complex things quickly. Examples include [concat](formula-components/functions/concat.md) (combines strings) and [dateAdd](formula-components/functions/dateadd.md) (adds `x` units of time to a date).

@@ -12,7 +12,7 @@ This page will explain those rules, and hopefully help you understand Notion's l
 
 Here's the TL;DR version:
 
-1. Filter options for formula properties depend of the [data type](data-types/) of your formula output ([string](data-types/string.md), [number](data-types/number.md), [Boolean/Checkbox](data-types/boolean-checkbox.md), or [date](data-types/date-data-type.md)).
+1. Filter options for formula properties depend of the [data type](../formula-basics/data-types/) of your formula output ([string](../formula-basics/data-types/string.md), [number](../formula-basics/data-types/number.md), [Boolean/Checkbox](../formula-basics/data-types/boolean-checkbox.md), or [date](../formula-basics/data-types/date-data-type.md)).
 2. Formula properties are [**read-only**](formulas-in-database-filters.md#formulas-are-read-only-properties)**.**
 3. A formula filter will prevent a new row from being inserted into current view unless the filter **fits the default output that formula would already have**.&#x20;
 4. In other words, formula filters **cannot** act as [forcing functions](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/#forcingfunctions). They cannot change the output of the formula. Formula output is determined solely by the formula itself and the variable data within any [properties the formula references](reference-properties-in-formulas.md).
@@ -40,13 +40,13 @@ You can create either a **basic** or **advanced** filter; either way, simply cho
 
 <figure><img src="../.gitbook/assets/Creating a Filter for a Formula Property in a Notion Database.png" alt=""><figcaption></figcaption></figure>
 
-Notion's filter builder treats formula properties differently depending on the [data type](data-types/) of their output.
+Notion's filter builder treats formula properties differently depending on the [data type](../formula-basics/data-types/) of their output.
 
 <details>
 
 <summary>String output</summary>
 
-Formulas that output [strings](data-types/string.md) are treated like text properties.&#x20;
+Formulas that output [strings](../formula-basics/data-types/string.md) are treated like text properties.&#x20;
 
 Options include:
 
@@ -65,7 +65,7 @@ Options include:
 
 <summary>Number output</summary>
 
-Formulas that output [numbers](data-types/number.md) are treated like number properties.&#x20;
+Formulas that output [numbers](../formula-basics/data-types/number.md) are treated like number properties.&#x20;
 
 Options include:
 
@@ -84,7 +84,7 @@ Options include:
 
 <summary>Date output</summary>
 
-Formulas that output [dates](data-types/date-data-type.md) are treated like date properties. Options include:
+Formulas that output [dates](../formula-basics/data-types/date-data-type.md) are treated like date properties. Options include:
 
 * Comparisons:
   * Is
@@ -111,7 +111,7 @@ Formulas that output [dates](data-types/date-data-type.md) are treated like date
 
 <summary>Boolean/Checkbox output</summary>
 
-Formulas that output [Boolean/Checkbox](data-types/boolean-checkbox.md) values are treated like checkbox properties.&#x20;
+Formulas that output [Boolean/Checkbox](../formula-basics/data-types/boolean-checkbox.md) values are treated like checkbox properties.&#x20;
 
 Options include:
 

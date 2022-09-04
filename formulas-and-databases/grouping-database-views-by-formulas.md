@@ -10,16 +10,16 @@ If you'd like to learn the basics of database grouping, check out this section i
 
 {% embed url="https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/#grouping" %}
 
-When grouping a view by a formula property, the [data type](data-types/) of the formula's **return value (i.e the output)** determines your grouping options.&#x20;
+When grouping a view by a formula property, the [data type](../formula-basics/data-types/) of the formula's **return value (i.e the output)** determines your grouping options.&#x20;
 
 Notion formulas can output one of four different data types:
 
-| Data Type                                                             | Examples                 |   |
-| --------------------------------------------------------------------- | ------------------------ | - |
-| [String](data-types/string.md)                                        | `"King of the Pirates"`  |   |
-| [Number](data-types/number.md)                                        | `9001`                   |   |
-| [Boolean](data-types/boolean-checkbox.md) (called Checkbox in Notion) | `true`, `false`          |   |
-| [Date](data-types/date-data-type.md)                                  | `"2022-11-11T12:00:00Z"` |   |
+| Data Type                                                                               | Examples                 |   |
+| --------------------------------------------------------------------------------------- | ------------------------ | - |
+| [String](../formula-basics/data-types/string.md)                                        | `"King of the Pirates"`  |   |
+| [Number](../formula-basics/data-types/number.md)                                        | `9001`                   |   |
+| [Boolean](../formula-basics/data-types/boolean-checkbox.md) (called Checkbox in Notion) | `true`, `false`          |   |
+| [Date](../formula-basics/data-types/date-data-type.md)                                  | `"2022-11-11T12:00:00Z"` |   |
 
 When your formula outputs a string value, you'll have the following grouping options:
 

@@ -14,9 +14,6 @@
   * [Number](formula-basics/data-types/number.md)
   * [Boolean (Checkbox)](formula-basics/data-types/boolean-checkbox.md)
   * [Date (Data Type)](formula-basics/data-types/date-data-type.md)
-* [Reference Properties in Formulas](formula-basics/reference-properties-in-formulas.md)
-* [Formulas in Database Filters](formula-basics/formulas-in-database-filters.md)
-* [Grouping Database Views by Formulas](formula-basics/grouping-database-views-by-formulas.md)
 
 ## Formula Components
 
@@ -85,6 +82,12 @@
   * [month](formula-components/functions/month.md)
   * [year](formula-components/functions/year.md)
   * [id](formula-components/functions/id.md)
+
+## Formulas and Databases
+
+* [Reference Properties in Formulas](formulas-and-databases/reference-properties-in-formulas.md)
+* [Formulas in Database Filters](formulas-and-databases/formulas-in-database-filters.md)
+* [Grouping Database Views by Formulas](formulas-and-databases/grouping-database-views-by-formulas.md)
 
 ## Reference
 

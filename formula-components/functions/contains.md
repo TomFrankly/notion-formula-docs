@@ -85,7 +85,7 @@ if(
 ```
 {% endcode %}
 
-File & Media-type [properties](../../formula-basics/reference-properties-in-formulas.md) return their file path as a [string](../../formula-basics/data-types/string.md) when referenced in Notion formulas.
+File & Media-type [properties](../../formulas-and-databases/reference-properties-in-formulas.md) return their file path as a [string](../../formula-basics/data-types/string.md) when referenced in Notion formulas.
 
 This formula uses `contains()` to check each file’s path for the presence of several common file extensions, such as `jpg`, `gif`, `mp3`, etc.
 
