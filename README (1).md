@@ -10,7 +10,7 @@ Notion formulas are bits of code that can make your Notion databases much more u
 
 Formulas in Notion are like a limited programming language. They're written and used in [Formula properties](create-a-formula-property.md) within Notion databases ([learn about databases with my complete beginner's guide](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/)).
 
-![This formula calculates simple interest () using data from the Investment, Interest Rate, and Years properties.](<.gitbook/assets/First Notion Formula Example.png>)
+<figure><img src=".gitbook/assets/First-Notion-Formula-Example.jpg" alt=""><figcaption><p>This formula calculates simple interest (<span class="math">Prt</span>) using data from the Investment, Interest Rate, and Years properties.</p></figcaption></figure>
 
 Formulas can take in data from all other database properties, process it using [constants](formula-components/constants/), [operators](formula-components/operators/), and built-in [functions](formula-components/functions/), and then output new data.
 

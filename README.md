@@ -2,7 +2,7 @@
 
 This site is a **comprehensive** reference for creating, using, and debugging [Notion formulas](https://www.notion.so/help/formulas).
 
-<figure><img src=".gitbook/assets/Simple Notion Formula.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Simple Notion Formula.jpg" alt=""><figcaption></figcaption></figure>
 
 Since Notion launched, it has lacked a full reference for the formulas feature. This is that reference.&#x20;
 
