@@ -264,7 +264,16 @@ prop("Number") * 2
 
 Here, I cannot simply create a filter like:
 
-*
+* Times 2 = 30
+
+Notion will not automatically set the **Number** property's value to 15 in order to make the **Times 2** formula property return 30.
+
+For this to work, you'd need two filters:
+
+* Number = 15
+* Times 2 = 30
+
+However, at this point you do not need the filter for Times 2. If Number is set to 15 via a forcing function, then Times 2 will be 30 by default. Therefore, its filter is redundant.
 
 ## "Created Time" and Similar Properties
 
@@ -279,9 +288,52 @@ When you create a new row in a database, it _looks_ like these values are instan
 
 This has important implications for filter design.
 
-When you use Notion on a desktop platform (i.e. not on a mobile device), creating a new row in a database does not open that row's page by default. Instead, you'll just get a new row or card, and you'll be able to set the row's title right away:
+For instance, let's say you want to design a database view in for a Notes database called **Today's Notes** (My [Ultimate Brain](https://thomasjfrank.com/brain/) template has such a view in its Quick Capture dashboard).
 
+<figure><img src="../.gitbook/assets/Today Notes Inbox - Ultimate Brain for Notion.png" alt=""><figcaption></figcaption></figure>
 
+To accomplish this, you'd naturally think to create the following filter, targetting your **Created time** property:
+
+* Created time is Today
+
+**But this doesn't work.**
+
+You'll quickly find out that new rows created in this video open as pages, rather than simple coming in as new rows (in table views).
+
+However, if you create the following filter combo, it _will_ work:
+
+* Created time is Today OR
+* Created time is empty
+
+This should be considered for formulas that reference these properties as well.
+
+For example, what if you wanted to create a view in your Notes database for **notes created within the current hour (on any day)?**
+
+You'd probably think to create the following formula:
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+// Property name: This Hour
+hour(prop("Created time")) == hour(now())
+```
+{% endcode %}
+
+Then, you'd filter by:
+
+* This Hour is Checked
+
+But since the Created Time property is empty when it is initialized, your new page will open fully.
+
+To fix this, make the following tweak to your formula so it accounts for the initial empty value:
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+// Property name: This Hour
+hour(prop("Created time")) == hour(now()) or empty(prop("Created time"))
+```
+{% endcode %}
+
+With this change, there's no need to adjust the filter; "This Hour" will _immediately_ output **true,** so the filter will allow new rows to be created directly in the database view.
 
 #### About the Author
 
