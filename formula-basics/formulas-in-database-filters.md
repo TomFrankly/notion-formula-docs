@@ -16,7 +16,7 @@ Here's the TL;DR version:
 2. Formula properties are [**read-only**](formulas-in-database-filters.md#formulas-are-read-only-properties)**.**
 3. A formula filter will prevent a new row from being inserted into current view unless the filter **fits the default output that formula would already have**.&#x20;
 4. In other words, formula filters **cannot** act as [forcing functions](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/#forcingfunctions). They cannot change the output of the formula. Formula output is determined solely by the formula itself and the variable data within any [properties the formula references](reference-properties-in-formulas.md).
-5. **Created by, Create time, Last edited by,** and **Last edited time** properties are [_initially empty_](formulas-in-database-filters.md#undefined)_._ This can cause confusion when filtering by them, or by formulas that reference them, so it's good to understand this bit of nuance.
+5. **Created by, Create time, Last edited by,** and **Last edited time** properties are [_initially empty_](formulas-in-database-filters.md#created-time-and-similar-properties)_._ This can cause confusion when filtering by them, or by formulas that reference them, so it's good to understand this bit of nuance.
 
 If you'd like to learn more about how to use filters in Notion databases, check out the filter section in my databases guide:
 
@@ -133,11 +133,11 @@ This has two major implications:
 * You cannot create a [forcing function](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/#forcingfunctions) that influences the output of a formula property.
 * If your filter does not match the _initial_ value of the formula, new rows will open directly as pages. They may also not show up in the database view that contains that filter.
 
-The term "_initial_" is important in that latter point because the **Created by, Created time, Edited by, and Edited time** properties have a little-known quirk: [Notion initially sees them as **empty**](formulas-in-database-filters.md#undefined) **** when a new row is created!
+The term "_initial_" is important in that latter point because the **Created by, Created time, Edited by, and Edited time** properties have a little-known quirk: Notion initially sees them as **empty** when a new row is created!
 
 Likewise, any formula that references a property that has one of these types will _also_ start off empty from Notion's perspective.
 
-The time/person is filled in so quickly that users never perceive this, but it does have important implications for filter design. [Click here](formulas-in-database-filters.md#undefined) to go to the section of this article that about this quirk.
+The time/person is filled in so quickly that users never perceive this, but it does have important implications for filter design. [Click here](formulas-in-database-filters.md#created-time-and-similar-properties) to go to the section of this article that about this quirk.
 
 ## Formulas are Read-Only Properties
 
