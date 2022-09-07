@@ -12,10 +12,6 @@ _Every_ formula [constant](formula-components/constants/), [operator](formula-co
 
 You'll also find reference guides on things like [operator precedence](reference/operator-precedence-and-associativity.md), [data type conversion](reference/converting-data-types.md), [debugging](reference/fixing-notion-formula-errors.md), and [regular expressions](reference/regular-expressions-in-notion-formulas.md).
 
-If you'd like a more structured, hands-on way to learn Notion formulas, you can check out my Notion Formula Bootcamp course. It's a guided, exercise-heavy learning experience, and is a great companion to this site (which is more like a technical reference):
-
-{% embed url="https://thomasjfrank.com/notion-formula-bootcamp/" %}
-
 #### "Why isn't this guide written directly in Notion?"
 
 I initially wrote most of this reference in Notion, but ultimately decided to host it on [GitBook](https://www.gitbook.com/) for multiple reasons:
