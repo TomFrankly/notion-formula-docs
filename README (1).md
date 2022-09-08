@@ -28,7 +28,7 @@ You'll also find reference guides on things like [operator precedence](reference
 
 ## A Formula Example
 
-Let's say you're a sales manager with several existing clients. You want to make sure you check in with each client every seven days.
+Let's say you're a sales manager with several existing clients. You want to make sure you check in with each client every three months.
 
 Notion formulas will let you create a database view like this (**assume "today" is August 18, 2022** - the day I wrote this guide):
 
