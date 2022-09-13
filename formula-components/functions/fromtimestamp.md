@@ -6,6 +6,12 @@ description: Learn how to use the fromTimestamp function in Notion formulas.
 
 The `fromTimestamp()` function converts a Unix timestamp into a [date](../../formula-basics/data-types/date-data-type.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+fromTimestamp(number)
+```
+{% endcode %}
+
 The Unix timestamp is the number of seconds since January 1, 1970 at 00:00 UTC. It is also known as Unix time or Epoch time.
 
 Note that Notion’s formula editor specifically looks for a Unix **millisecond** timestamp.

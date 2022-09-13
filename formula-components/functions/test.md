@@ -6,6 +6,12 @@ description: Learn how to use the test function in Notion formulas.
 
 The `test()` function allows you to test whether a [string](../../formula-basics/data-types/string.md) contains a substring, the latter of which can be a [regular expression](../../reference/regular-expressions-in-notion-formulas.md). If it does, the function returns [true](../constants/true.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+replace(string, string [regex supported])
+```
+{% endcode %}
+
 `test()` accepts two string arguments and outputs a [Boolean](../../formula-basics/data-types/boolean-checkbox.md) result.
 
 {% hint style="info" %}

@@ -6,6 +6,12 @@ description: Learn how to use the log2 function in Notion formulas.
 
 The `log2()` function returns the base-2 logarithm of a [number](../../formula-basics/data-types/number.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+log2(number)
+```
+{% endcode %}
+
 For reference, here are the named components of a logarithm:
 
 $$

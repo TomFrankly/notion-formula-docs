@@ -6,6 +6,12 @@ description: Learn how to use the sign function in Notion formulas.
 
 The `sign()` function returns the sign of its argument. It indicates whether its argument is positive, negative, or zero.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+sign(number)
+```
+{% endcode %}
+
 `sign()` accepts only [numbers](../../formula-basics/data-types/number.md); it will not auto-convert [Booleans](../../formula-basics/data-types/boolean-checkbox.md) or other [data types](../../formula-basics/data-types/).
 
 ## Example Formulas

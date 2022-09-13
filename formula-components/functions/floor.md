@@ -6,6 +6,12 @@ description: Learn how to use the floor function in Notion formulas.
 
 The `floor()` function returns the largest integer that is less than or equal to its argument.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+floor(number)
+```
+{% endcode %}
+
 In other words, `floor()` rounds a non-whole [number](../../formula-basics/data-types/number.md) to the next smallest integer. When used on an integer, it will return that integer.
 
 ## Example Formulas

@@ -6,6 +6,13 @@ description: Learn how to use the unaryMinus (-) operator in Notion formulas.
 
 The **unaryMinus (`-`)** operator negates a [number](../../formula-basics/data-types/number.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+-number
+unaryMinus(number)
+```
+{% endcode %}
+
 Unary negation _negates_ a number; it does not simply make it negative. This means you can use it to make a negative number positive.
 
 This is useful to keep in mind since [unaryPlus](unaryplus.md) does not make a number positive; it converts non-numeric data to a number.

@@ -6,6 +6,13 @@ description: Learn how to use the Boolean "and" operator in Notion formulas.
 
 The **and** operator returns [true](../constants/true.md) if _and only if_ both of its operands have a `true` [Boolean](../../formula-basics/data-types/boolean-checkbox.md) value. Otherwise, it will return [false](../constants/false.md). It accepts [Boolean](../../formula-basics/data-types/boolean-checkbox.md) operands.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+Boolean and Boolean
+and(Boolean, Boolean)
+```
+{% endcode %}
+
 **And** is useful for testing that two or more things are true.
 
 {% hint style="info" %}

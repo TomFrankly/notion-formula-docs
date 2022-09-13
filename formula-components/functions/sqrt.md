@@ -6,6 +6,12 @@ description: Learn how to use the sqrt function in Notion formulas.
 
 The `sqrt()` function returns the square root of its argument. `sqrt()` accepts only [numbers](../../formula-basics/data-types/number.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+sqrt(number)
+```
+{% endcode %}
+
 ## Example Formulas
 
 {% code overflow="wrap" lineNumbers="true" %}

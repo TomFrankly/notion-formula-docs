@@ -14,6 +14,12 @@ The `day()` function returns an integer ([number](../../formula-basics/data-type
 * `5` = Friday
 * `6` = Saturday
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+day(date)
+```
+{% endcode %}
+
 `day()` (and its sibling functions [minute](minute.md), [hour](hour.md), [date](date.md), [month](month.md), and [year](year.md)) is useful for manipulating dates within Notion formulas.
 
 ## Example Formulas

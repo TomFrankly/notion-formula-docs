@@ -6,6 +6,12 @@ description: Learn how to use the month function in Notion formulas.
 
 The `month()` function returns an integer ([number](../../formula-basics/data-types/number.md)) between `0` and `11` that corresponds to the month of its [date](../../formula-basics/data-types/date-data-type.md) argument.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+month(date)
+```
+{% endcode %}
+
 `month()` (and its sibling functions [minute](date.md), [hour](hour.md), [day](day.md), [date](date.md), and [year](year.md)) is useful for manipulating dates within Notion formulas.
 
 ## Example Formulas

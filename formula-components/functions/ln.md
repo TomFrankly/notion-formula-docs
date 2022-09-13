@@ -6,6 +6,12 @@ description: Learn how to use the ln function in Notion formulas.
 
 The `ln()` function returns the natural logarithm of a [number](../../formula-basics/data-types/number.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+ln(number)
+```
+{% endcode %}
+
 The natural logarithm is $$\log_e$$, where $$e$$ is [Euler’s Constant](../constants/e.md) (approximately `2.718281828459045`).
 
 For reference, here are the named components of a logarithm:

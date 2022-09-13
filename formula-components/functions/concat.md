@@ -6,6 +6,14 @@ description: Learn how to use the concat function in Notion formulas.
 
 The `concat()` function concatenates (aka combines) its arguments. It accepts one or more [string](../../formula-basics/data-types/string.md) arguments, and outputs a single combined string.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+concat(string)
+concat(string, string)
+concat(string, string, ...)
+```
+{% endcode %}
+
 `concat()` can accept any number of arguments.
 
 {% hint style="info" %}

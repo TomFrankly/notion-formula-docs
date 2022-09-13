@@ -6,6 +6,12 @@ description: Learn how to use the join function in Notion formulas.
 
 The `join()` function takes its first argument and inserts it in between each of its additional arguments. It accepts only [string](../../formula-basics/data-types/string.md) arguments.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+join(string, string, string)
+```
+{% endcode %}
+
 `join()` can accept one or more arguments, but needs at least three to perform its intended function.
 
 `join()` acts much like JavaScript’s [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/join) method, with all but the first argument acting as the elements inside an array. Note that Notion’s `join()` function does not use a default separator (e.g. `,`), so you’ll always need to define one.

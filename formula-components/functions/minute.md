@@ -6,6 +6,12 @@ description: Learn how to use the minute function in Notion formulas.
 
 The `minute()` function returns an integer ([number](../../formula-basics/data-types/number.md)) between `0` and `59` that corresponds to the minute of its [date](../../formula-basics/data-types/date-data-type.md) argument.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+minute(date)
+```
+{% endcode %}
+
 `minute()` (and its sibling functions [hour](hour.md), [day](day.md), [date](date.md), [month](month.md), and [year](year.md)) is useful for manipulating dates within Notion formulas.
 
 ## Example Formulas

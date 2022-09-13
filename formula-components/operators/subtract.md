@@ -6,13 +6,6 @@ description: Learn how to use the subtract (-) operator in Notion formulas.
 
 The **subtract (`-`)** operator allows you to subtract two [numbers](../../formula-basics/data-types/number.md) and return their difference.
 
-{% code overflow="wrap" lineNumbers="true" %}
-```jsx
-number - number
-subtract(number, number)
-```
-{% endcode %}
-
 When used in mathematical equations, the `-` operator follows the standard mathematical order of operations (PEMDAS). For more detail, see [Operator Precedence](../../reference/operator-precedence-and-associativity.md).
 
 You can also use the function version, `subtract()`.

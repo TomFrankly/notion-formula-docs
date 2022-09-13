@@ -8,6 +8,13 @@ description: >-
 
 The **remainder (`%`)** operator allows you to get the **remainder** after dividing the first operand with the second operand.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+number % number
+mod(number, number)
+```
+{% endcode %}
+
 Notion provides a `mod()` function as well as `%` and `mod`operators (I'll just reference `%` for the rest of this article).&#x20;
 
 Somewhat confusingly, these do not return a true modulus value; they return a remainder (see: [Remainder or Modulus?](mod.md#remainder-or-modulus) below).

@@ -6,6 +6,20 @@ description: Learn how to use the Boolean "equal" (==) operator in Notion formul
 
 The equality (`==`) operator returns [true](../constants/true.md) if its operands are equal. It accepts operands of all [data types](../../formula-basics/data-types/) - [strings](../../formula-basics/data-types/string.md), [numbers](../../formula-basics/data-types/number.md), [Booleans](../../formula-basics/data-types/boolean-checkbox.md), and [dates](../../formula-basics/data-types/date-data-type.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+string == string
+number == number
+Boolean == Boolean
+date == date
+
+equal(string, string)
+equal(number, number)
+equal(Boolean, Boolean)
+equal(date, date)
+```
+{% endcode %}
+
 {% hint style="info" %}
 **Good to know:** Notion does not allow for comparisons between different [data types](../../formula-basics/data-types/), so the strict equality operator `===` is not supported (_or rather, the equality operator (\`==\`) is already a strict equality operator)_. You must convert all data to a common type before making a comparison (e.g. by using [format()](../functions/format.md) to create a string value).
 {% endhint %}

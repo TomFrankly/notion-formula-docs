@@ -6,6 +6,12 @@ description: Learn how to use the abs function in Notion formulas.
 
 The `abs()` function calculates the absolute value of a [number](../../formula-basics/data-types/number.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+abs(number)
+```
+{% endcode %}
+
 A number’s absolute value is simply **how far it is away from zero.** Therefore, the absolute value of a negative number is equal to its positive equivalent - e.g. `abs(-5) == 5.`
 
 In mathematical notation, absolute values are expressed by wrapping a number in || signs:

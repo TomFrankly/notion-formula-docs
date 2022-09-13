@@ -4,7 +4,15 @@ description: Learn how to use the slice function in Notion formulas.
 
 # slice
 
-The `slice()` function allows you to “slice” up a [string](../../formula-basics/data-types/string.md) and output a smaller piece of it. It accepts three arguments:
+The `slice()` function allows you to “slice” up a [string](../../formula-basics/data-types/string.md) and output a smaller piece of it.
+
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+slice(string, number, number [optional])
+```
+{% endcode %}
+
+It accepts three arguments:
 
 1. The input [string](../../formula-basics/data-types/string.md)
 2. A starting index, which is **included** in the output string (the start index of the input string is `0`).

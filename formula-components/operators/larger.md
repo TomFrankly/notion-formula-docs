@@ -6,6 +6,18 @@ description: Learn how to use the Boolean "larger" (>) operator in Notion formul
 
 The larger (`>`) operator returns [true](../constants/true.md) if its left operand is greater than its right operand. It accepts [numeric](../../formula-basics/data-types/number.md), [date](../../formula-basics/data-types/date-data-type.md), and [Boolean](../../formula-basics/data-types/boolean-checkbox.md) operands.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+number > number
+Boolean > Boolean
+date > date
+
+larger(number, number)
+larger(Boolean, Boolean)
+larger(date, date)
+```
+{% endcode %}
+
 You can also use the function version, `larger()`.
 
 ## Example Formulas

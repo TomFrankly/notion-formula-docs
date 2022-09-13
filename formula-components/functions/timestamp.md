@@ -6,6 +6,12 @@ description: Learn how to use the timestamp function in Notion formulas.
 
 The `timestamp()` function converts a [date](../../formula-basics/data-types/date-data-type.md) argument into its corresponding Unix timestamp (also known as Unix Time or Epoch Time), which is a [number](../../formula-basics/data-types/number.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+timestamp(date)
+```
+{% endcode %}
+
 The Unix timestamp is the number of seconds since January 1, 1970 at 00:00 UTC.
 
 Notion’s `timestamp()` function specifically outputs a **millisecond** timestamp.

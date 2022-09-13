@@ -6,6 +6,14 @@ description: Learn how to use the min function in Notion formulas.
 
 The `min()` function returns the smallest of one or more [numbers](../../formula-basics/data-types/number.md). `min()` accepts only numbers or properties that output numbers (it will not auto-convert [Booleans](../../formula-basics/data-types/boolean-checkbox.md)).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+min(number)
+min(number, number)
+min(number, number, ...)
+```
+{% endcode %}
+
 ## Example Formulas
 
 {% code overflow="wrap" lineNumbers="true" %}

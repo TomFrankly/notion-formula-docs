@@ -6,6 +6,15 @@ description: Learn how to use the format function in Notion formulas.
 
 The `format()` function formats its argument as a string. It accepts all [data types](../../formula-basics/data-types/), including [dates](../../formula-basics/data-types/date-data-type.md), [Booleans](../../formula-basics/data-types/boolean-checkbox.md), [numbers](../../formula-basics/data-types/number.md), and even [strings](../../formula-basics/data-types/string.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+format(number)
+format(Boolean)
+format(date)
+format(string)
+```
+{% endcode %}
+
 `format()` is very useful for converting data types within Notion formulas.
 
 {% hint style="info" %}

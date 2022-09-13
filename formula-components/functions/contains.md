@@ -6,6 +6,12 @@ description: Learn how to use the contains function in Notion formulas.
 
 The `contains()` function tests whether the first argument contains the second argument. It only accepts [strings](../../formula-basics/data-types/string.md) (or nested functions that output strings).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+contains(string)
+```
+{% endcode %}
+
 `contains()` tests for the entire string passed via the second argument, is case-sensitive, and does not accept [regular expressions](../../reference/regular-expressions-in-notion-formulas.md).
 
 {% hint style="info" %}

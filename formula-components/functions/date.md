@@ -6,6 +6,12 @@ description: Learn how to use the date function in Notion formulas.
 
 The `date()` function returns an integer ([number](../../formula-basics/data-types/number.md)) between `1` and `31` that corresponds to the day of the month of its [date](../../formula-basics/data-types/date-data-type.md) argument.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+date(date)
+```
+{% endcode %}
+
 `date()` (and its sibling functions [minute](minute.md), [hour](hour.md), [day](day.md), [month](month.md), and [year](year.md)) is useful for manipulating dates within Notion formulas.
 
 ## Example Formulas

@@ -4,11 +4,17 @@ description: Learn how to use the exp function in Notion formulas.
 
 # exp
 
-The `exp()` function allows you to raise [Euler’s Constant](../constants/e.md) $$e$$ (the base of the natural logarithm) to a higher power and get the output, where the argument is the exponent:
+The `exp()` function allows you to raise [Euler’s Number](../constants/e.md) $$e$$ (the base of the natural logarithm) to a higher power and get the output, where the argument is the exponent:
 
 $$
 e^n = m
 $$
+
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+exp(number)
+```
+{% endcode %}
 
 $$e$$ approximately equals `2.718281828459045`.
 

@@ -6,6 +6,13 @@ description: Learn how to use the Boolean "or" operator in Notion formulas.
 
 The **or** operator returns [true](../constants/true.md) if either one of its operands is true. It accepts [Boolean](../../formula-basics/data-types/boolean-checkbox.md) operands.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+Boolean or Boolean
+or(Boolean, Boolean)
+```
+{% endcode %}
+
 {% hint style="info" %}
 **Good to know:** Notion is picky, so `||`, `OR`, and `Or` won’t work here. Only the case-sensitive `or` will be accepted.
 {% endhint %}

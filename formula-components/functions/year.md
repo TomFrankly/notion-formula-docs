@@ -6,6 +6,12 @@ description: Learn how to use the year function in Notion formulas.
 
 The `year()` function returns an integer ([number](../../formula-basics/data-types/number.md)) that corresponds to the year of its [date](../../formula-basics/data-types/date-data-type.md) argument.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+year(date)
+```
+{% endcode %}
+
 `year()` (and its sibling functions [minute](minute.md), [hour](hour.md), [day](day.md), [date](date.md), and [month](month.md)) is useful for manipulating dates within Notion formulas.
 
 ## Example Formulas

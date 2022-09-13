@@ -6,6 +6,12 @@ description: Learn how to use the formatDate function in Notion formulas.
 
 The `formatDate()` function formats a [date](../../formula-basics/data-types/date-data-type.md) as a [string](../../formula-basics/data-types/string.md) using the Moment standard time format.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+formatDate(date, string [must conform to Moment format])
+```
+{% endcode %}
+
 It accepts two arguments in the following order:
 
 1. A [date](../../formula-basics/data-types/date-data-type.md) (can be passed via properties - Date, Created Time, Last Edited Time - or via date functions such as [now](now.md), [fromTimestamp](fromtimestamp.md), [dateAdd](dateadd.md), [dateSubtract](datesubtract.md))

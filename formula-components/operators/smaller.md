@@ -6,6 +6,18 @@ description: Learn how to use the Boolean "smaller" (<) operator in Notion formu
 
 The smaller (`<`) operator returns [true](../constants/true.md) if its left operand is less than its right operand. It accepts [numeric](../../formula-basics/data-types/number.md), [date](../../formula-basics/data-types/date-data-type.md), and [Boolean](../../formula-basics/data-types/boolean-checkbox.md) operands.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+number < number
+Boolean < Boolean
+date < date
+
+smaller(number, number)
+smaller(Boolean, Boolean)
+smaller(date, date)
+```
+{% endcode %}
+
 You can also use the function version, `smaller()`.
 
 ## Example Formulas

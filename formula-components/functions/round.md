@@ -6,6 +6,12 @@ description: Learn how to use the round function in Notion formulas.
 
 The `round()` function rounds its argument to the nearest integer (whole number).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+round(number)
+```
+{% endcode %}
+
 The exact midpoint between two whole numbers will round up towards positive infinity, not “away from zero”.
 
 For example: `round(-4.5)` will round up to `4`.

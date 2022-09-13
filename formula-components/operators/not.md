@@ -6,6 +6,13 @@ description: Learn how to use the Boolean "not" operator in Notion formulas.
 
 The **not** operator inverts the truth value of a [Boolean/Checkbox](../../formula-basics/data-types/boolean-checkbox.md) value in a Notion formula. Another way of thinking about it is that it returns [true](../constants/true.md) only if its operand is [false](../constants/true.md). It accepts [Boolean](../../formula-basics/data-types/boolean-checkbox.md) operands.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+not Boolean
+not(Boolean)
+```
+{% endcode %}
+
 It can be used in several ways, including:
 
 * Changing `true` to `false`, or vice-versa

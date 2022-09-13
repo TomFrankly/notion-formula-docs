@@ -6,6 +6,14 @@ description: Learn how to use the toNumber function in Notion formulas.
 
 The `toNumber()` function converts its argument to a [number](../../formula-basics/data-types/number.md) if it can do so. It is useful for converting [strings](../../formula-basics/data-types/string.md), [Booleans](../../formula-basics/data-types/boolean-checkbox.md), and [dates](../../formula-basics/data-types/date-data-type.md) to numbers.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+toNumber(string)
+toNumber(Boolean)
+toNumber(date)
+```
+{% endcode %}
+
 Unlike [unaryPlus](../operators/unaryplus.md), `toNumber()` _can_ convert dates to numbers. When used to convert a date, toNumber will convert it to its corresponding Unix timestamp; this behavior matches that of the [timestamp](timestamp.md) function.
 
 ## Example Formulas

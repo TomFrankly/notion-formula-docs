@@ -6,6 +6,12 @@ description: Learn how to use the end function in Notion formulas.
 
 The `end()` function returns the end date from a date range. It accepts a single [date](../../formula-basics/data-types/date-data-type.md) argument.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+end(date)
+```
+{% endcode %}
+
 `end()` is useful for obtaining the end date from a Date property which contains a date range.
 
 When you pass a single date as the argument - i.e. from a Created Time/Last Edited Time property, or a timestamp - `end()` simply returns that date.

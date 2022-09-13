@@ -6,6 +6,12 @@ description: Learn how to use the log10 function in Notion formulas.
 
 The `log10()` function returns the base-10 logarithm of a [number](../../formula-basics/data-types/number.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+log10(number)
+```
+{% endcode %}
+
 For reference, here are the named components of a logarithm:
 
 $$

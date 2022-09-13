@@ -6,6 +6,16 @@ description: Learn how to use the unaryPlus (+) operator in Notion formulas.
 
 The **unaryPlus (`+`)** operator is used to convert [Booleans](../../formula-basics/data-types/boolean-checkbox.md) and numeric [strings](../../formula-basics/data-types/string.md) to [numbers](../../formula-basics/data-types/number.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
++string
++Boolean
+
+unaryPlus(string)
+unaryPlus(Boolean)
+```
+{% endcode %}
+
 Unlike [toNumber](../functions/tonumber.md), it cannot convert [dates](../../formula-basics/data-types/date-data-type.md) to numbers. Otherwise, it is functionally equivalent, and it can be written with the `+` operator for quick use.
 
 You can also use the function version, `unaryPlus()`.

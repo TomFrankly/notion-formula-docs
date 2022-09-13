@@ -6,6 +6,14 @@ description: Learn how to use the max function in Notion formulas.
 
 The `max()` function returns the greatest of one or more [numbers](../../formula-basics/data-types/number.md). `max()` accepts only numbers or properties that output numbers (it will not auto-convert [Booleans](../../formula-basics/data-types/boolean-checkbox.md)).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+max(number)
+max(number, number)
+max(number, number, ...)
+```
+{% endcode %}
+
 ## Example Formulas
 
 {% code overflow="wrap" lineNumbers="true" %}

@@ -6,6 +6,12 @@ description: Learn how to use the start function in Notion formulas.
 
 The `start()` function returns the start date from a date range. It accepts a single [date](../../formula-basics/data-types/date-data-type.md) argument.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+start(date)
+```
+{% endcode %}
+
 `start()` is useful for obtaining the start date from a Date property which contains a date range.
 
 When you pass a single date as the argument - i.e. from a Created Time/Last Edited Time property, or a timestamp - `start()` simply returns that date.

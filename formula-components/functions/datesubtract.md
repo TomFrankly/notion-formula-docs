@@ -4,7 +4,15 @@ description: Learn how to use the dateSubtract function in Notion formulas.
 
 # dateSubtract
 
-The `dateSubtract()` function accepts a [date](../../formula-basics/data-types/date-data-type.md) argument and subtracts from it, returning a new date. It requires three arguments in the following order:
+The `dateSubtract()` function accepts a [date](../../formula-basics/data-types/date-data-type.md) argument and subtracts from it, returning a new date.
+
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+dateSubtract(date, number, string [from unit list])
+```
+{% endcode %}
+
+It requires three arguments in the following order:
 
 1. A [date](../../formula-basics/data-types/date-data-type.md) (must be an actual date data type)
 2. A [number](../../formula-basics/data-types/number.md)

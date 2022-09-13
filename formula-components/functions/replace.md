@@ -6,6 +6,12 @@ description: Learn how to use the replace function in Notion formulas.
 
 The `replace()` function searches a [string](../../formula-basics/data-types/string.md) for a pattern (which can be a [regular expression](../../reference/regular-expressions-in-notion-formulas.md)), and replaces the **first** match it finds with another string.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+replace(string, string [regex supported], string [regex supported])
+```
+{% endcode %}
+
 Since they can search for pattern matches using regular expressions, `replace()`,its counterpart, [replaceAll](replaceall.md), and the related [test](test.md) function are three of the most versatile and powerful functions you can use in your Notion formulas.
 
 {% hint style="info" %}

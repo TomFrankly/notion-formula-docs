@@ -4,7 +4,15 @@ description: Learn how to use the dateAdd function in Notion formulas.
 
 # dateAdd
 
-The `dateAdd()` function accepts a [date](../../formula-basics/data-types/date-data-type.md) argument and adds to it, returning a new date. It requires three arguments in the following order:
+The `dateAdd()` function accepts a [date](../../formula-basics/data-types/date-data-type.md) argument and adds to it, returning a new date.
+
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+dateAdd(date, number, string [from unit list])
+```
+{% endcode %}
+
+It requires three arguments in the following order:
 
 1. A [date](../../formula-basics/data-types/date-data-type.md) (must be an actual date data type)
 2. A [number](../../formula-basics/data-types/number.md)

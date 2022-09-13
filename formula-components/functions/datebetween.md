@@ -4,7 +4,15 @@ description: Learn how to use the dateBetween function in Notion formulas.
 
 # dateBetween
 
-The `dateBetween()` function returns the amount of time between two [dates](../../formula-basics/data-types/date-data-type.md), based on a specified unit of time. The function returns a [number](../../formula-basics/data-types/number.md), and requires three arguments in the following order:
+The `dateBetween()` function returns the amount of time between two [dates](../../formula-basics/data-types/date-data-type.md), based on a specified unit of time.
+
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+dateBetween(date, date, string [from unit list])
+```
+{% endcode %}
+
+The function returns a [number](../../formula-basics/data-types/number.md), and requires three arguments in the following order:
 
 * Date 1 (must be a [date](../../formula-basics/data-types/date-data-type.md) data type)
 * Date 2 (must be a date data type)

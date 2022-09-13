@@ -6,6 +6,12 @@ description: Learn how to use the now function in Notion formulas.
 
 The `now()` function returns the current date and time in your local timezone. `now()` accepts no arguments.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+now()
+```
+{% endcode %}
+
 Notion sets your timezone automatically using your system/OS timezone.
 
 now() and [fromTimestamp](fromtimestamp.md) are the only functions that will allow you to add a true [date object](../../formula-basics/data-types/date-data-type.md) into a formula without pulling from a Date property. To "hard-code" other dates into a formula, use the methods described below.

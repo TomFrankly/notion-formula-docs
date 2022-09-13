@@ -6,6 +6,12 @@ description: Learn how to use the replaceAll function within a Notion formula.
 
 The `replaceAll()` function searches a [string](../../formula-basics/data-types/string.md) for a pattern (which can be a [regular expression](../../reference/regular-expressions-in-notion-formulas.md)), and replaces ALL matches it finds with another string.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+replaceAll(string, string [regex supported], string [regex supported])
+```
+{% endcode %}
+
 Since they can search for pattern matches using regular expressions, `replaceAll()` and its counterpart, [replace](replace.md), are two of the most versatile and powerful functions you can use in your Notion formulas.
 
 {% hint style="info" %}

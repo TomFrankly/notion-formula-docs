@@ -6,6 +6,12 @@ description: Learn how to use the ceil function in Notion formulas.
 
 The `ceil()` function returns the smallest integer that is greater than or equal to its argument.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+ceil(number)
+```
+{% endcode %}
+
 In other words, `ceil()` rounds a non-whole [number](../../formula-basics/data-types/number.md) to the next largest integer. When used on an integer, it will return that integer.
 
 ## Example Formulas

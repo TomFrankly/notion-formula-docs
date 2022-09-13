@@ -6,6 +6,12 @@ description: Learn how to use the hour function in Notion formulas.
 
 The `hour()` function returns an integer ([number](../../formula-basics/data-types/number.md)) between `0` and `23` that corresponds to the hour of its [date](../../formula-basics/data-types/date-data-type.md) argument.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+hour(date)
+```
+{% endcode %}
+
 `hour()` (and its sibling functions [minute](minute.md), [day](day.md), [date](date.md), [month](month.md), and [year](year.md)) is useful for manipulating dates within Notion formulas.
 
 ## Example Formulas

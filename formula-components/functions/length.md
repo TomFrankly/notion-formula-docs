@@ -6,6 +6,12 @@ description: Learn how to use the length function in Notion formulas.
 
 The `length()` function outputs a [number](../../formula-basics/data-types/number.md) that corresponds to the length of a [string](../../formula-basics/data-types/string.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+length(string)
+```
+{% endcode %}
+
 ## Example Formulas
 
 {% code overflow="wrap" lineNumbers="true" %}

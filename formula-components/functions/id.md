@@ -6,6 +6,12 @@ description: Learn how to use the id function in Notion formulas.
 
 The `id()` function returns the current row’s **page ID,** which is a unique [string](../../formula-basics/data-types/string.md). `id()` accepts no arguments.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+id()
+```
+{% endcode %}
+
 The page ID can also be found at the end of a Notion page’s URL (before any query strings starting with `?`.
 
 `id()` outputs a string that is guaranteed to be unique for each page in a database. It is possible for all other properties - including Name - to contain the same value in multiple rows.

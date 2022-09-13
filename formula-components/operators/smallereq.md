@@ -8,6 +8,18 @@ description: >-
 
 The smaller or equal (`<=`) operator returns [true](../constants/true.md) if its left operand is less than or equal to its right operand. It accepts [numeric](../../formula-basics/data-types/number.md), [date](../../formula-basics/data-types/date-data-type.md), and [Boolean](../../formula-basics/data-types/boolean-checkbox.md) operands.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+number <= number
+Boolean <= Boolean
+date <= date
+
+smallerEq(number, number)
+smallerEq(Boolean, Boolean)
+smallerEq(date, date)
+```
+{% endcode %}
+
 You can also use the function version, `smallerEq()`.
 
 ## Example Formula

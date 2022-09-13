@@ -6,6 +6,12 @@ description: Learn how to use the cbrt function in Notion formulas.
 
 The `cbrt()` function returns the cube root of its argument. `cbrt()` accepts only [numbers](../../formula-basics/data-types/number.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+cbrt(number)
+```
+{% endcode %}
+
 The argument is $$a$$ where:
 
 $$

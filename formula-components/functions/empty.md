@@ -6,6 +6,15 @@ description: Learn how to use the empty function in Notion formulas.
 
 The `empty()` function returns [true](../constants/true.md) if its argument is empty, or has a value that equates to empty - including `0` and `false`.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+empty(string)
+empty(number)
+empty(Boolean)
+empty(date)
+```
+{% endcode %}
+
 `empty()` accepts all [data types](../../formula-basics/data-types/), including [strings](../../formula-basics/data-types/string.md), [numbers](../../formula-basics/data-types/number.md), [Booleans](../../formula-basics/data-types/boolean-checkbox.md), and [dates](../../formula-basics/data-types/date-data-type.md).
 
 ## Example Formulas
