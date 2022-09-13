@@ -6,6 +6,12 @@ description: Learn how to use the mathematical constant pi in Notion formulas.
 
 The mathematical constant _pi_ ($$π$$) equals (roughly) `3.1415926559`.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+pi
+```
+{% endcode %}
+
 $$π$$ is the **ratio between the circumference and diameter of a circle.** This ratio is shared by _all_ circles, no matter the size.
 
 $$π$$ can be used to calculate the circumference and area of a circle, volume and surface area of a sphere, and more.

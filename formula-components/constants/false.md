@@ -6,6 +6,12 @@ description: Learn how to use the Boolean constant false in Notion formulas.
 
 The `false` constant represents the [Boolean](../../formula-basics/data-types/boolean-checkbox.md) output `false`. Its opposite is [true](true.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+false
+```
+{% endcode %}
+
 Type `false` into a Notion formula property, and that property will output an **unchecked checkbox,** representing the value `false`.
 
 A **Boolean** value has only two states, which can be thought of as:

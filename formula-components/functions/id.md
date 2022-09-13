@@ -4,7 +4,7 @@ description: Learn how to use the id function in Notion formulas.
 
 # id
 
-The `id()` function returns the current row’s **page ID,** which is a unique [string](../../formula-basics/data-types/string.md).
+The `id()` function returns the current row’s **page ID,** which is a unique [string](../../formula-basics/data-types/string.md). `id()` accepts no arguments.
 
 The page ID can also be found at the end of a Notion page’s URL (before any query strings starting with `?`.
 

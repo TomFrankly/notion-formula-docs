@@ -6,6 +6,12 @@ description: Learn how to use the Boolean constant true in Notion formulas.
 
 The `true` constant represents the [Boolean](../../formula-basics/data-types/boolean-checkbox.md) output `true`. Its opposite is [false](false.md).
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+true
+```
+{% endcode %}
+
 Type `true` into a Notion formula property, and that property will output a **checked checkbox,** representing the value `true`.
 
 A **Boolean** value has only two states, which can be thought of as:

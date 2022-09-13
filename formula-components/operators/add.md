@@ -9,6 +9,16 @@ The **add** (`+`) operator allows you to:
 * Perform addition on [numbers](../../formula-basics/data-types/number.md)
 * Concatenate [strings](../../formula-basics/data-types/string.md) - i.e. combine them (also doable with [concat](../functions/concat.md))
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+number + number
+string + string
+
+add(number, number)
+add(string, string)
+```
+{% endcode %}
+
 When used in mathematical equations, the `+` operator follows the standard mathematical order of operations (PEMDAS). For more detail, see [Operator Precedence](../../reference/operator-precedence-and-associativity.md).
 
 You can also use the function version, `add()`.

@@ -10,6 +10,12 @@ Within a Notion formula, you can use the `prop()`function to reference and "pull
 
 When using `prop()`, encapsulate the property name in quotes – e.g. `prop("Name")`.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+prop("Name")
+```
+{% endcode %}
+
 Notion formulas can work with four different [data types](../formula-basics/data-types/) - [string](../formula-basics/data-types/string.md) (text content), [number](../formula-basics/data-types/number.md), [Boolean](../formula-basics/data-types/boolean-checkbox.md) (checkbox), and [date](../formula-basics/data-types/date-data-type.md).
 
 All database property types in Notion output a specific data type.&#x20;

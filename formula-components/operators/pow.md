@@ -6,6 +6,13 @@ description: Learn how to use the exponentiation (^) operator in Notion formulas
 
 The **power (`^`)** operator (also known as the _exponentiation_ operator) allows you to raise a [number](../../formula-basics/data-types/number.md) to a higher power.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+number[base] ^ number[exponent]
+pow(number[base], number[exponent]) 
+```
+{% endcode %}
+
 In technical terms, it raises the first operand to the power of the second operand.
 
 In Notion, the `^` operator has a higher [operator precedence](../../reference/operator-precedence-and-associativity.md) than the [unaryPlus](unaryplus.md) and [unaryMinus](unaryminus.md) operators, and has **right-to-left** associativity.

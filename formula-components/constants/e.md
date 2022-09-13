@@ -6,6 +6,12 @@ description: Learn how to use the mathematical constant e in Notion formulas.
 
 The mathematical constant $$e$$ is known as Euler’s Number, and approximately equals `2.718281828459045`.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+e
+```
+{% endcode %}
+
 In simple terms, the mathematical constant $$e$$ is a **base value** for calculating **continuous growth.**
 
 $$e$$ is used to calculate compound interest, rates of radioactive decay, and many other things.

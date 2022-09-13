@@ -4,7 +4,7 @@ description: Learn how to use the now function in Notion formulas.
 
 # now
 
-The `now()` function returns the current date and time in your local timezone.
+The `now()` function returns the current date and time in your local timezone. `now()` accepts no arguments.
 
 Notion sets your timezone automatically using your system/OS timezone.
 

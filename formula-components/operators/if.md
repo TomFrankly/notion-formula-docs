@@ -4,7 +4,22 @@ description: Learn how to use the "if" operator in Notion formulas.
 
 # if
 
-The `if()` operator allows you to write **if-then** statements within a Notion formula. If-then statements, also called **conditional statements,** contain:
+The `if()` operator allows you to write **if-then** statements within a Notion formula.&#x20;
+
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+if([condition], ['then' expression], ['else' expression])
+
+// Argument 1 must always return a Boolean value.
+// Arguments 2 and 3 must have a matching type.
+if(Boolean, string, string)
+if(Boolean, number, number)
+if(Boolean, Boolean, Boolean)
+if(Boolean, date, date)
+```
+{% endcode %}
+
+If-then statements, also called **conditional statements,** contain:
 
 * The condition - a statement to be evaluated for **truthiness** (i.e. “is it true?”)
 * The “then” statement - a statement that is executed if the condition is true

@@ -6,6 +6,13 @@ description: Learn how to use the multiplication (*) operator in Notion formulas
 
 The **multiply (`*`)** operator allows you to multiply two [numbers](../../formula-basics/data-types/number.md) together and get their product.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+number * number
+multiply(number, number)
+```
+{% endcode %}
+
 The `*` operator follows the standard mathematical order of operations (PEMDAS). For more detail, see [Operator Precedence](../../reference/operator-precedence-and-associativity.md).
 
 You can also use the function version, `multiply()`.

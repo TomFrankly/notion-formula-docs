@@ -6,6 +6,13 @@ description: Learn how to use the division (/) operator in Notion formulas.
 
 The **divide (`/`)** operator allows you to divide two [numbers](../../formula-basics/data-types/number.md) and get their quotient.
 
+{% code overflow="wrap" lineNumbers="true" %}
+```jsx
+number / number
+divide(number, number)
+```
+{% endcode %}
+
 The `/` operator follows the standard mathematical order of operations (PEMDAS). For more detail, see [Operator Precedence](../../reference/operator-precedence-and-associativity.md).
 
 You can also use the function version, `divide()`.
