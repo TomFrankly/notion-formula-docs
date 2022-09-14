@@ -13,10 +13,14 @@ Notion formulas can accept (and return) four different types of data: String, Nu
 | [Boolean](boolean-checkbox.md) (called Checkbox in Notion) | `true`, `false`          |   |
 | [Date](date-data-type.md)                                  | `"2022-11-11T12:00:00Z"` |   |
 
-Notion formulas almost never do automatic type conversion.
+Notion formulas almost never do automatic type conversion; you must convert data to other types manually. Learn how to do that here:
+
+{% content-ref url="../../reference/converting-data-types.md" %}
+[converting-data-types.md](../../reference/converting-data-types.md)
+{% endcontent-ref %}
 
 {% hint style="info" %}
-_The only exceptions to this are within the_ [_test_](../../formula-components/functions/test.md)_,_ [_replace_](../../formula-components/functions/replace.md)_, and_ [_replaceAll_](../../formula-components/functions/replaceall.md) _functions. These are advanced functions, so I won't cover their details here._
+_The only exceptions to this are within the_ [_test_](../../formula-components/functions/test.md)_,_ [_replace_](../../formula-components/functions/replace.md)_, and_ [_replaceAll_](../../formula-components/functions/replaceall.md) _functions, which do limited automatic type conversion. These are advanced functions, so I won't cover their details here._
 {% endhint %}
 
 This fact has several implications:
