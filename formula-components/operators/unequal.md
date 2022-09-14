@@ -10,10 +10,10 @@ The inequality (`!=`) operator returns [true](../constants/true.md) if its opera
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```jsx
-string == string
-number == number
-Boolean == Boolean
-date == date
+string != string
+number != number
+Boolean != Boolean
+date != date
 
 unequal(string, string)
 unequal(number, number)
