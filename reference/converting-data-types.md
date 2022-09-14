@@ -91,7 +91,7 @@ To numbers:
 | Function/Method                                           | Example            |
 | --------------------------------------------------------- | ------------------ |
 | [timestamp](../formula-components/functions/timestamp.md) | `timestamp(now())` |
-| [toNumber](../formula-components/functions/tonumber.md)   | toNumber(now())    |
+| [toNumber](../formula-components/functions/tonumber.md)   | `toNumber(now())`  |
 | [minute](../formula-components/functions/minute.md)       | `minute(now())`    |
 | [hour](../formula-components/functions/hour.md)           | `hour(now())`      |
 | [day](../formula-components/functions/day.md)             | `day(now())`       |
