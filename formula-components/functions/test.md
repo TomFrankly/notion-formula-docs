@@ -8,7 +8,7 @@ The `test()` function allows you to test whether a [string](../../formula-basics
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```jsx
-replace(string, string [regex supported])
+test(string, string [regex supported])
 ```
 {% endcode %}
 
