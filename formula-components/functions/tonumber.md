@@ -16,11 +16,19 @@ toNumber(date)
 
 Unlike [unaryPlus](../operators/unaryplus.md), `toNumber()` _can_ convert dates to numbers. When used to convert a date, toNumber will convert it to its corresponding Unix timestamp; this behavior matches that of the [timestamp](timestamp.md) function.
 
+{% hint style="info" %}
+**Good to know:** If a string starts with a number and contains letter chracters as well,`toNumber()` will return just that starting number. However, if the string does not start with a number, `toNumber()` will output nothing – even if the string contains a number elsewhere.
+{% endhint %}
+
 ## Example Formulas
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```jsx
 toNumber("42") // Output: 42 (number)
+
+toNumber("42 rabbits jump 100 times") // Output: 42
+
+toNumber("I have 42 rabbits.") // Output: blank
 
 toNumber(true) // Output: 1
 
