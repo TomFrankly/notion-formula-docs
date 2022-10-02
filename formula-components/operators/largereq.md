@@ -44,6 +44,10 @@ now() >= now() // Output: true
 **Good to know:** When comparing dates, "larger" = "later".
 {% endhint %}
 
+{% hint style="info" %}
+**Good to know:** The largerEq (`>=`) operator _cannot_ be chained in a Notion formula. A formula like `3 >= 2 >= 1` won't work. Use the [and](and.md) operator to get around this - e.g. 3 `` >= `2 and 2 >= 1`.
+{% endhint %}
+
 ## Example Database
 
 This example database records the powerlifting totals for a few lifters and compares them against the USPA standards for different lifting levels. The Level formula outputs the lifter’s current level.

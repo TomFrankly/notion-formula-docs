@@ -44,6 +44,10 @@ now() <= now() // Output: true
 **Good to know:** When comparing dates, "larger" = "later".
 {% endhint %}
 
+{% hint style="info" %}
+**Good to know:** The smallerEq (`<=`) operator _cannot_ be chained in a Notion formula. A formula like `1 <= 2 <= 3` won't work. Use the [and](and.md) operator to get around this - e.g. 1 `<= 2 and 2 <= 3`.
+{% endhint %}
+
 ## Example Database
 
 This example database is an _extremely_ simplified tax calculator. It uses the **Gross Income** for each person to determine that person’s tax bracket, and outputs their total tax liability in the **Total Tax** property.

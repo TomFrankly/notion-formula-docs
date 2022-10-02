@@ -42,6 +42,10 @@ now() > dateSubtract(now(), 1, "days") // Output: true
 **Good to know:** When comparing dates, "larger" = "later".
 {% endhint %}
 
+{% hint style="info" %}
+**Good to know:** The larger (`>`) operator _cannot_ be chained in a Notion formula. A formula like `3 > 2 > 1` won't work. Use the [and](and.md) operator to get around this - e.g. 3 `` > `2 and 2 > 1`.
+{% endhint %}
+
 ## Example Database
 
 This example database records the power levels of two fighters at different stages. The **Stronger** formula outputs a sentence stating who the stronger fighter is at that time.

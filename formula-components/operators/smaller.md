@@ -42,6 +42,10 @@ now() < dateAdd(now(), 1, "months") // Output: true
 **Good to know:** When comparing dates, "larger" = "later".
 {% endhint %}
 
+{% hint style="info" %}
+**Good to know:** The smaller (`<`) operator _cannot_ be chained in a Notion formula. A formula like `1 < 2 < 3` won't work. Use the [and](and.md) operator to get around this - e.g. 1 `< 2 and 2 < 3`.
+{% endhint %}
+
 ## Example Database
 
 The example database below tracks votes amongst a pirate crew. For each issue, a quorum must be reached; at least 3 members must vote. Once a quorum is reached, only proposals that receive more **Yays** than **Nays** will be passed and enacted.
