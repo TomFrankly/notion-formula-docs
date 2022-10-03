@@ -106,6 +106,12 @@ Notion provides six comparison operators:
 | [smaller](smaller.md)     | `<`    | `smaller()`      | `6 < 9`  |
 | [smallerEq](smallereq.md) | `<=`   | `smallerEq()`    | `9 <= 9` |
 
+{% hint style="info" %}
+**Good to know:** Comparison operators cannot be **chained** in formulas.
+
+E.g. `1 < 2 < 3` will not work. Instead, use `1 < 2 and 2 < 3`.
+{% endhint %}
+
 ## Special Operators
 
 Notion also provides two special operators that don't fit neatly into the categories above.
@@ -137,6 +143,10 @@ When multiple operators are present in a Notion formula, their order of executio
 {% content-ref url="../../reference/operator-precedence-and-associativity.md" %}
 [operator-precedence-and-associativity.md](../../reference/operator-precedence-and-associativity.md)
 {% endcontent-ref %}
+
+{% hint style="info" %}
+
+{% endhint %}
 
 #### About the Author
 
