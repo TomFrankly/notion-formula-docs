@@ -183,6 +183,28 @@ Orange
 ```
 {% endcode %}
 
+There are also several characters that must escaped with double backslashes (`\\`) in order to be represented normally. These characters are used as special characters within regular expressions if they are not escaped.
+
+| Character               | Escape |
+| ----------------------- | ------ |
+| Period - `.`            | `\\.`  |
+| Question mark - `?`     | `\\?`  |
+| Dollar sign - `$`       | `\\$`  |
+| Asterisk - `*`          | `\\*`  |
+| Plus sign - `+`         | `\\+`  |
+| Caret - `^`             | `\\^`  |
+| Left parenthesis - `(`  | `\\(`  |
+| Right parenthesis - `)` | `\\)`  |
+| Left bracket - `[`      | `\\[`  |
+| Right bracket - `]`     | `\\]`  |
+| Left curly brace - `{`  | `\\{`  |
+| Right curly brace - `}` | `\\}`  |
+| Pipe - `\|`             | `\\\|` |
+| Forward slash - `/`     | `\\/`  |
+| Backslash `\`           | `\\\\` |
+
+Single quotations (`'`) and double quotations (`"`) must also be escaped, but they can only be escaped by escaping their unicode number. See the section below on [Escaping Unicode Numbers](regular-expressions-in-notion-formulas.md#unicode-numbers-in-regular-expressions).
+
 ### Character Classes
 
 Learn about character classes:
