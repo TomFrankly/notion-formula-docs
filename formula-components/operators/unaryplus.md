@@ -50,6 +50,26 @@ unaryPlus("42") // Output: 42
 ```
 {% endcode %}
 
+Using `unaryPlus()` on a string value that contains _any_ non-numeric characters will result in [null output](../../reference/return-null-empty-values-in-formulas.md). However, that "null" output is still considered to be a [number](../../formula-basics/data-types/number.md) in terms of its [data type](../../formula-basics/data-types/).
+
+This can cause formulas that contain additional functions or output to throw a Type Mismatch [error](../../reference/fixing-notion-formula-errors.md).
+
+Oddly, `+""` returns `0` rather than `null`. This is contrary to the equivalent [toNumber](../functions/tonumber.md) formula: `toNumber("")` returns `null`.
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
++"Monkey" // Output: null (but still Number type)
+
++"42 Monkeys" // Output: null (but still Number type)
+
++"" // Output: 0
+
++"Monkeys" + 22 // Output: 22
+
++"Monkeys" + " and rabbits loop the loop" // Output: Type Mismatch Error
+```
+{% endcode %}
+
 ## Example Database: Daily Habit Score
 
 The example database below tracks daily habits with a checkbox property for each habit. The **Score** property converts each checkbox’s Boolean value into a number, and then adds up a total score for the day.
