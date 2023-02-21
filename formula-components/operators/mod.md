@@ -74,7 +74,7 @@ Note: The above rules only apply if you're hard-coding a negative divisor in a f
 
 The **remainder** and **modulus** of two numbers will be identical when both the dividend and divisor have the same sign (`+/-`). If their signs differ, however, the modulus will differ from the remainder.
 
-{% embed url="https://bigmachine.io/2018/08/21/mod-and-remainder-are-not-the-same-2/" %}
+{% embed url="https://bigmachine.io/2018/08/21/mod-and-remainder-are-not-the-same/" %}
 
 {% embed url="https://2ality.com/2019/08/remainder-vs-modulo.html" %}
 
